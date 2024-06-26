@@ -1,0 +1,35 @@
+{
+  "327kGKompmdSmrNkruU49FzZqx2pGiihvw": {
+    "in_degree": 13190,
+    "out_degree": 13224,
+    "ai_label": {
+      "exchange": "90%",
+      "others": "5%",
+      "kyc": "5%",
+      "scam": "0%"
+    },
+    "method": "dfs"
+  },
+  "3Ai97uJfrC8kLUdgydLPfKFwFmAE5s9b7t": {
+    "in_degree": 2882,
+    "out_degree": 2846,
+    "ai_label": {
+      "exchange": "80%",
+      "others": "15%",
+      "kyc": "5%",
+      "scam": "0%"
+    },
+    "method": "dfs"
+  },
+  "bc1qkfu7qztm2zc07mg7z0f49m6uw3jp9y2yq884ax": {
+    "in_degree": 1512,
+    "out_degree": 379,
+    "ai_label": {
+      "exchange": "80%",
+      "others": "15%",
+      "kyc": "5%",
+      "scam": "0%"
+    },
+    "method": "dfs"
+  }
+}
