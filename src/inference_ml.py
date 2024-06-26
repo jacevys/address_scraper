@@ -331,8 +331,8 @@ def main(address):
 
     result = inference(model_name='btc_xgb_1', address=address, return_function=return_result)
 
-    print(f'pred: {result}')
-    print('#' * 100)
+    # print(f'pred: {result}')
+    # print('#' * 100)
     return result
 #
 if __name__ == '__main__':
