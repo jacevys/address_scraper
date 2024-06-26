@@ -1,4 +1,1064 @@
 {
+  "bc1qajn9nr0f90zd2z20kgdwyy34e247g0v6alvpz6": {
+    "in_degree": 182,
+    "out_degree": 147,
+    "ai_label": {
+      "Kyc": "50.47800064086914%",
+      "Others": "26.714000701904297%",
+      "Exchange": "22.808000564575195%"
+    },
+    "method": "dfs"
+  },
+  "1PFtVxKG3o8Devy6JVExKxFre6UMwDfpTM": {
+    "in_degree": 57,
+    "out_degree": 55,
+    "ai_label": {
+      "Kyc": "57.176998138427734%",
+      "Others": "21.525999069213867%",
+      "Exchange": "21.297000885009766%"
+    },
+    "method": "dfs"
+  },
+  "1Me8ZpnJx63PAT2NgGoffEye1VoM7tXpEA": {
+    "in_degree": 27,
+    "out_degree": 27,
+    "ai_label": {
+      "Kyc": "55.13600158691406%",
+      "Others": "23.15999984741211%",
+      "Exchange": "21.70400047302246%"
+    },
+    "method": "dfs"
+  },
+  "1BT2YLNqSfdRQjpr5hCuBG5NoYRyTtzooD": {
+    "in_degree": 32,
+    "out_degree": 32,
+    "ai_label": {
+      "Kyc": "49.42100143432617%",
+      "Others": "27.993999481201172%",
+      "Exchange": "22.586000442504883%"
+    },
+    "method": "dfs"
+  },
+  "1HvUh3UXo6iBxHYaqE4J3gak9LqQDxPqFb": {
+    "in_degree": 57,
+    "out_degree": 55,
+    "ai_label": {
+      "Kyc": "56.196998596191406%",
+      "Others": "22.309999465942383%",
+      "Exchange": "21.493000030517578%"
+    },
+    "method": "dfs"
+  },
+  "1DC9n2BG5dQwy31JM8LanWXxXKt73pSjS9": {
+    "in_degree": 100,
+    "out_degree": 99,
+    "ai_label": {
+      "Kyc": "57.555999755859375%",
+      "Others": "21.233999252319336%",
+      "Exchange": "21.209999084472656%"
+    },
+    "method": "dfs"
+  },
+  "1PTbqd73MxGMtpQqwtQ842U8bwcgegC6hc": {
+    "in_degree": 8,
+    "out_degree": 8,
+    "ai_label": {
+      "Others": "56.09299850463867%",
+      "Kyc": "22.375999450683594%",
+      "Exchange": "21.5310001373291%"
+    },
+    "method": "dfs"
+  },
+  "38MNmq6G9t21weyVGcPiJFLYrwdxb9nx37": {
+    "in_degree": 2,
+    "out_degree": 2,
+    "ai_label": {
+      "Others": "57.29399871826172%",
+      "Kyc": "21.43899917602539%",
+      "Exchange": "21.267000198364258%"
+    },
+    "method": "dfs"
+  },
+  "bc1qh8h38eg7840knraxalcgdldzreqt2sz7e7e227": {
+    "in_degree": 1,
+    "out_degree": 1,
+    "ai_label": {
+      "Others": "56.85900115966797%",
+      "Kyc": "21.7450008392334%",
+      "Exchange": "21.395999908447266%"
+    },
+    "method": "dfs"
+  },
+  "3MVrc6v4YTKo7TXRYjdb89nnAL9MSjkGoj": {
+    "in_degree": 1185,
+    "out_degree": 1184,
+    "ai_label": {
+      "Kyc": "52.077999114990234%",
+      "Others": "25.326000213623047%",
+      "Exchange": "22.594999313354492%"
+    },
+    "method": "dfs"
+  },
+  "15ThEF71jAmwZgeDrqdArANKDXsxAJewCS": {
+    "in_degree": 767,
+    "out_degree": 768,
+    "ai_label": {
+      "Kyc": "42.16400146484375%",
+      "Others": "34.525001525878906%",
+      "Exchange": "23.31100082397461%"
+    },
+    "method": "dfs"
+  },
+  "3NTG6KtuTzaGm73aHYYnYLNS38huzMj9fc": {
+    "in_degree": 1,
+    "out_degree": 1,
+    "ai_label": {
+      "Others": "57.29399871826172%",
+      "Kyc": "21.43899917602539%",
+      "Exchange": "21.267000198364258%"
+    },
+    "method": "dfs"
+  },
+  "3GdChSMfaHMJTQ9gpqWEDdC7ftkKhdMDmK": {
+    "in_degree": 1,
+    "out_degree": 1,
+    "ai_label": {
+      "Others": "54.882999420166016%",
+      "Kyc": "23.381999969482422%",
+      "Exchange": "21.735000610351562%"
+    },
+    "method": "dfs"
+  },
+  "bc1qhejrvlsf3vld2zqmw3secaget8mkcv5m9q3czj": {
+    "in_degree": 1,
+    "out_degree": 1,
+    "ai_label": {
+      "Others": "56.86800003051758%",
+      "Kyc": "21.768999099731445%",
+      "Exchange": "21.363000869750977%"
+    },
+    "method": "dfs"
+  },
+  "bc1q29sn2vlmx2ld4ll2dpuz08ulapugvuru69g5sg": {
+    "in_degree": 1,
+    "out_degree": 1,
+    "ai_label": {
+      "Others": "56.33100128173828%",
+      "Kyc": "22.198999404907227%",
+      "Exchange": "21.4689998626709%"
+    },
+    "method": "dfs"
+  },
+  "14mNiMMAR1A2ptrosfqFNhXkououDBufTn": {
+    "in_degree": 612,
+    "out_degree": 610,
+    "ai_label": {
+      "Kyc": "57.354000091552734%",
+      "Others": "21.360000610351562%",
+      "Exchange": "21.285999298095703%"
+    },
+    "method": "dfs"
+  },
+  "3EF9UpxA6kSsukGpeNdUPBcPEr2BGLXz9u": {
+    "in_degree": 5,
+    "out_degree": 5,
+    "ai_label": {
+      "Others": "54.41400146484375%",
+      "Kyc": "23.76300048828125%",
+      "Exchange": "21.822999954223633%"
+    },
+    "method": "dfs"
+  },
+  "3JRvZJSBxqjpjBEkGHtbr1pSZRmtMR1q3Y": {
+    "in_degree": 1,
+    "out_degree": 1,
+    "ai_label": {
+      "Others": "56.1510009765625%",
+      "Kyc": "22.350000381469727%",
+      "Exchange": "21.5%"
+    },
+    "method": "dfs"
+  },
+  "37StTjEp8vEnGkbKqbM29WpeXVDjererzo": {
+    "in_degree": 1,
+    "out_degree": 1,
+    "ai_label": {
+      "Others": "57.332000732421875%",
+      "Kyc": "21.4060001373291%",
+      "Exchange": "21.261999130249023%"
+    },
+    "method": "dfs"
+  },
+  "bc1qasds67un720aqe6gsv4665my4v0cgcjx2edawk": {
+    "in_degree": 5,
+    "out_degree": 5,
+    "ai_label": {
+      "Others": "56.33100128173828%",
+      "Kyc": "22.198999404907227%",
+      "Exchange": "21.4689998626709%"
+    },
+    "method": "dfs"
+  },
+  "1EvaG4kYBzjiibRhBhB9V4DjJUBaGEkuJA": {
+    "in_degree": 850,
+    "out_degree": 848,
+    "ai_label": {
+      "Others": "48.59299850463867%",
+      "Kyc": "28.511999130249023%",
+      "Exchange": "22.895000457763672%"
+    },
+    "method": "dfs"
+  },
+  "3HBkRUKScaHxa5H1mEG5hqVNTsT9pAJngt": {
+    "in_degree": 168,
+    "out_degree": 151,
+    "ai_label": {
+      "Kyc": "47.020999908447266%",
+      "Others": "29.74799919128418%",
+      "Exchange": "23.231000900268555%"
+    },
+    "method": "dfs"
+  },
+  "33QkWQcYoGDdTFQaAvETCbk98jnbDaYF8Y": {
+    "in_degree": 57,
+    "out_degree": 57,
+    "ai_label": {
+      "Others": "42.124000549316406%",
+      "Kyc": "34.45199966430664%",
+      "Exchange": "23.423999786376953%"
+    },
+    "method": "dfs"
+  },
+  "1NZ8LTYK4i15L858KfHv7cQFNUfH8zjEpY": {
+    "in_degree": 1,
+    "out_degree": 1,
+    "ai_label": {
+      "Others": "56.33100128173828%",
+      "Kyc": "22.198999404907227%",
+      "Exchange": "21.4689998626709%"
+    },
+    "method": "dfs"
+  },
+  "37jcAQmGxVc3kLcWgkR4f7Z3ujq2fu11Qp": {
+    "in_degree": 5,
+    "out_degree": 5,
+    "ai_label": {
+      "Others": "54.80699920654297%",
+      "Kyc": "23.434999465942383%",
+      "Exchange": "21.757999420166016%"
+    },
+    "method": "dfs"
+  },
+  "bc1qp47wk4hn4gacye3smm655hjfpxz4ph4f3dn7g5cgjd9dxjg8fg4qqaz3g6": {
+    "in_degree": 1,
+    "out_degree": 1,
+    "ai_label": {
+      "Others": "56.33100128173828%",
+      "Kyc": "22.198999404907227%",
+      "Exchange": "21.4689998626709%"
+    },
+    "method": "dfs"
+  },
+  "bc1qqfq3wgpjh8nzyvrxmmns62tw0ue0q8zem2fmrv42upgpmcey9zxsm4m7l6": {
+    "in_degree": 1,
+    "out_degree": 1,
+    "ai_label": {
+      "Others": "56.1510009765625%",
+      "Kyc": "22.350000381469727%",
+      "Exchange": "21.5%"
+    },
+    "method": "dfs"
+  },
+  "1Nn29TzuVCD97i46RQibxKB28H2pL26gbR": {
+    "in_degree": 65,
+    "out_degree": 68,
+    "ai_label": {
+      "Kyc": "53.904998779296875%",
+      "Others": "24.166000366210938%",
+      "Exchange": "21.92799949645996%"
+    },
+    "method": "dfs"
+  },
+  "38YFmDFH5WA3pNVRjyBF2kwReMeTswTvDW": {
+    "in_degree": 1,
+    "out_degree": 1,
+    "ai_label": {
+      "Others": "56.1510009765625%",
+      "Kyc": "22.350000381469727%",
+      "Exchange": "21.5%"
+    },
+    "method": "dfs"
+  },
+  "19KmtVohj2vicuXWiMzo3szL9QwmheBr6E": {
+    "in_degree": 1,
+    "out_degree": 1,
+    "ai_label": {
+      "Others": "56.33100128173828%",
+      "Kyc": "22.198999404907227%",
+      "Exchange": "21.4689998626709%"
+    },
+    "method": "dfs"
+  },
+  "3EXvRtNfYNjGqny5TBEQXwmW1TMd8wqC9J": {
+    "in_degree": 95,
+    "out_degree": 95,
+    "ai_label": {
+      "Kyc": "57.12799835205078%",
+      "Others": "21.56399917602539%",
+      "Exchange": "21.30900001525879%"
+    },
+    "method": "dfs"
+  },
+  "3Q1j63F3bLBSUtBQziD38GruupPAS8MSDA": {
+    "in_degree": 857,
+    "out_degree": 863,
+    "ai_label": {
+      "Kyc": "56.36199951171875%",
+      "Others": "22.00200080871582%",
+      "Exchange": "21.63599967956543%"
+    },
+    "method": "dfs"
+  },
+  "17ZTctFfYd4ydRXM7NhUwrSGrjCeeQpMim": {
+    "in_degree": 52,
+    "out_degree": 51,
+    "ai_label": {
+      "Others": "39.39699935913086%",
+      "Kyc": "37.31700134277344%",
+      "Exchange": "23.28499984741211%"
+    },
+    "method": "dfs"
+  },
+  "37WzRNt7KBKtnEdcFRc2yZTrvmj4Q9JVk6": {
+    "in_degree": 26,
+    "out_degree": 26,
+    "ai_label": {
+      "Kyc": "45.96500015258789%",
+      "Others": "31.075000762939453%",
+      "Exchange": "22.959999084472656%"
+    },
+    "method": "dfs"
+  },
+  "1ArKgKuwEu3efM5xBBXtbXL2BxcqnA657g": {
+    "in_degree": 1344,
+    "out_degree": 1343,
+    "ai_label": {
+      "Kyc": "56.9640007019043%",
+      "Others": "21.61199951171875%",
+      "Exchange": "21.423999786376953%"
+    },
+    "method": "dfs"
+  },
+  "398qQRminP88Vbghh3oNWxw2Ph7oofLD3v": {
+    "in_degree": 17,
+    "out_degree": 17,
+    "ai_label": {
+      "Others": "52.393001556396484%",
+      "Kyc": "25.41200065612793%",
+      "Exchange": "22.19499969482422%"
+    },
+    "method": "dfs"
+  },
+  "bc1qzzlr4egvafgqulyr3upw2grscf7k86raukaem9": {
+    "in_degree": 282,
+    "out_degree": 282,
+    "ai_label": {
+      "Kyc": "48.42100143432617%",
+      "Others": "28.6299991607666%",
+      "Exchange": "22.948999404907227%"
+    },
+    "method": "dfs"
+  },
+  "3CV5WgevNPxm43G2iagxhr7zj3H363KKHA": {
+    "in_degree": 9,
+    "out_degree": 9,
+    "ai_label": {
+      "Others": "53.98699951171875%",
+      "Kyc": "24.11400032043457%",
+      "Exchange": "21.89900016784668%"
+    },
+    "method": "dfs"
+  },
+  "bc1qxu2qvejytxs3p7ess808gckem34v6jtjh3fgeq": {
+    "in_degree": 94,
+    "out_degree": 94,
+    "ai_label": {
+      "Kyc": "44.57099914550781%",
+      "Others": "32.27399826049805%",
+      "Exchange": "23.155000686645508%"
+    },
+    "method": "dfs"
+  },
+  "13ES23WVkyEvNBAebbzM2HktvLWmpbAFmA": {
+    "in_degree": 1,
+    "out_degree": 1,
+    "ai_label": {
+      "Others": "56.1510009765625%",
+      "Kyc": "22.350000381469727%",
+      "Exchange": "21.5%"
+    },
+    "method": "dfs"
+  },
+  "1MU597VNmJFsBYfunovydKrC49FWo35c4v": {
+    "in_degree": 1181,
+    "out_degree": 1181,
+    "ai_label": {
+      "Kyc": "40.94900131225586%",
+      "Others": "35.56800079345703%",
+      "Exchange": "23.482999801635742%"
+    },
+    "method": "dfs"
+  },
+  "3E6R9UFnL5Zotrgefo15G315BXWRrSEXhF": {
+    "in_degree": 28,
+    "out_degree": 28,
+    "ai_label": {
+      "Kyc": "49.42100143432617%",
+      "Others": "27.993999481201172%",
+      "Exchange": "22.586000442504883%"
+    },
+    "method": "dfs"
+  },
+  "1GzohR8CpRnfgzjrZ9xFQv6jg98LJQVFvn": {
+    "in_degree": 1,
+    "out_degree": 1,
+    "ai_label": {
+      "Others": "54.882999420166016%",
+      "Kyc": "23.381999969482422%",
+      "Exchange": "21.735000610351562%"
+    },
+    "method": "dfs"
+  },
+  "3AEg1DrGw1kez4fhdomTyVSXiokT6fgkAX": {
+    "in_degree": 1,
+    "out_degree": 1,
+    "ai_label": {
+      "Others": "56.1510009765625%",
+      "Kyc": "22.350000381469727%",
+      "Exchange": "21.5%"
+    },
+    "method": "dfs"
+  },
+  "3Gkzm8TjFUsCB3zd97ZQYV7G6GwTKeAEy8": {
+    "in_degree": 286,
+    "out_degree": 284,
+    "ai_label": {
+      "Kyc": "46.60900115966797%",
+      "Others": "30.131999969482422%",
+      "Exchange": "23.259000778198242%"
+    },
+    "method": "dfs"
+  },
+  "3NBkE1Aoewu8oMD9tA7o5Ap5ak31RoJs7w": {
+    "in_degree": 580,
+    "out_degree": 358,
+    "ai_label": {
+      "Kyc": "56.36199951171875%",
+      "Others": "22.00200080871582%",
+      "Exchange": "21.63599967956543%"
+    },
+    "method": "dfs"
+  },
+  "bc1qdmw5eu0vg8kv29a0aq5es337e8eavzvupvw5k9": {
+    "in_degree": 1,
+    "out_degree": 1,
+    "ai_label": {
+      "Others": "56.1510009765625%",
+      "Kyc": "22.350000381469727%",
+      "Exchange": "21.5%"
+    },
+    "method": "dfs"
+  },
+  "3BeaYm4D5eDyMRkVnHW6b7AM12wJaFAcgH": {
+    "in_degree": 1,
+    "out_degree": 1,
+    "ai_label": {
+      "Others": "56.1510009765625%",
+      "Kyc": "22.350000381469727%",
+      "Exchange": "21.5%"
+    },
+    "method": "dfs"
+  },
+  "bc1qp687asu9w3slj977gk87449x6zf8cdf639cz8v": {
+    "in_degree": 1,
+    "out_degree": 1,
+    "ai_label": {
+      "Others": "56.1510009765625%",
+      "Kyc": "22.350000381469727%",
+      "Exchange": "21.5%"
+    },
+    "method": "dfs"
+  },
+  "12AK9HVxrYiFF9j7PC5bdt38GjddvL3L7o": {
+    "in_degree": 1,
+    "out_degree": 1,
+    "ai_label": {
+      "Others": "56.33100128173828%",
+      "Kyc": "22.198999404907227%",
+      "Exchange": "21.4689998626709%"
+    },
+    "method": "dfs"
+  },
+  "1H5DzzoiaJaup9Cp3MHrt9M8yqX5xpoEW9": {
+    "in_degree": 1,
+    "out_degree": 1,
+    "ai_label": {
+      "Others": "56.33100128173828%",
+      "Kyc": "22.198999404907227%",
+      "Exchange": "21.4689998626709%"
+    },
+    "method": "dfs"
+  },
+  "38QmsNStXbdmhEG6jdMLHq7eV2xL3KGGZu": {
+    "in_degree": 1,
+    "out_degree": 1,
+    "ai_label": {
+      "Others": "56.67599868774414%",
+      "Kyc": "21.929000854492188%",
+      "Exchange": "21.395999908447266%"
+    },
+    "method": "dfs"
+  },
+  "3DBko3kP6y9VDx1jKAqgc6CkfFNUgPTdvy": {
+    "in_degree": 1,
+    "out_degree": 1,
+    "ai_label": {
+      "Others": "56.1510009765625%",
+      "Kyc": "22.350000381469727%",
+      "Exchange": "21.5%"
+    },
+    "method": "dfs"
+  },
+  "3HjdM93vHPmW6N4JpnG3t8x1R8F4RVmbft": {
+    "in_degree": 1,
+    "out_degree": 1,
+    "ai_label": {
+      "Others": "56.67599868774414%",
+      "Kyc": "21.929000854492188%",
+      "Exchange": "21.395999908447266%"
+    },
+    "method": "dfs"
+  },
+  "3PcEficWgur3LLgHiwRQYev9nXagaj9WtD": {
+    "in_degree": 732,
+    "out_degree": 717,
+    "ai_label": {
+      "Kyc": "57.29199981689453%",
+      "Others": "21.399999618530273%",
+      "Exchange": "21.308000564575195%"
+    },
+    "method": "dfs"
+  },
+  "bc1qrfayvrqqzyyrj3yd068c7te7haz4m4hr9fqx47": {
+    "in_degree": 174,
+    "out_degree": 174,
+    "ai_label": {
+      "Others": "44.66600036621094%",
+      "Kyc": "31.94499969482422%",
+      "Exchange": "23.388999938964844%"
+    },
+    "method": "dfs"
+  },
+  "1FG2y1yq2mJb1GqmwLkcpZDKtxUE7iLZQY": {
+    "in_degree": 95,
+    "out_degree": 94,
+    "ai_label": {
+      "Kyc": "56.92399978637695%",
+      "Others": "21.719999313354492%",
+      "Exchange": "21.356000900268555%"
+    },
+    "method": "dfs"
+  },
+  "331K4qSTBWdJq5cE3VBQSy2FdaaP2VzBDR": {
+    "in_degree": 1,
+    "out_degree": 1,
+    "ai_label": {
+      "Others": "56.1510009765625%",
+      "Kyc": "22.350000381469727%",
+      "Exchange": "21.5%"
+    },
+    "method": "dfs"
+  },
+  "bc1q7l0dgvn3my9mandpv9mc3yptrz8knreq742fd2": {
+    "in_degree": 6,
+    "out_degree": 6,
+    "ai_label": {
+      "Others": "54.80699920654297%",
+      "Kyc": "23.434999465942383%",
+      "Exchange": "21.757999420166016%"
+    },
+    "method": "dfs"
+  },
+  "3Pb9pdHU9NWnNVB1eFd6eG5t5MLm9SeTCg": {
+    "in_degree": 1,
+    "out_degree": 1,
+    "ai_label": {
+      "Others": "56.861000061035156%",
+      "Kyc": "21.764999389648438%",
+      "Exchange": "21.374000549316406%"
+    },
+    "method": "dfs"
+  },
+  "bc1q48cccy6vwkf8letlxs5lzv9wshnuwnfzg2z57d": {
+    "in_degree": 1,
+    "out_degree": 1,
+    "ai_label": {
+      "Others": "56.805999755859375%",
+      "Kyc": "21.825000762939453%",
+      "Exchange": "21.368999481201172%"
+    },
+    "method": "dfs"
+  },
+  "3Aw3cjUqP1MAuFE5gwgQuZNQcyJ9VJ8QGg": {
+    "in_degree": 16,
+    "out_degree": 16,
+    "ai_label": {
+      "Others": "55.76499938964844%",
+      "Kyc": "22.658000946044922%",
+      "Exchange": "21.57699966430664%"
+    },
+    "method": "dfs"
+  },
+  "bc1q6hmwnp7rcc89v8keg23qq8dr4l3x40anqsayu8": {
+    "in_degree": 1,
+    "out_degree": 1,
+    "ai_label": {
+      "Others": "56.42900085449219%",
+      "Kyc": "22.110000610351562%",
+      "Exchange": "21.459999084472656%"
+    },
+    "method": "dfs"
+  },
+  "1Aq14ud6eBhzgw9jR7KHpzPh2MQRrTo5PQ": {
+    "in_degree": 18,
+    "out_degree": 18,
+    "ai_label": {
+      "Others": "50.10100173950195%",
+      "Kyc": "27.385000228881836%",
+      "Exchange": "22.513999938964844%"
+    },
+    "method": "dfs"
+  },
+  "3CAggxDYCubAAXxqNPbYkuv4pGyCj5pCPb": {
+    "in_degree": 1,
+    "out_degree": 1,
+    "ai_label": {
+      "Others": "56.448001861572266%",
+      "Kyc": "22.104999542236328%",
+      "Exchange": "21.44700050354004%"
+    },
+    "method": "dfs"
+  },
+  "3EAk8dTQ3NBhQVqHopFnfkbUhuF3y58oif": {
+    "in_degree": 788,
+    "out_degree": 784,
+    "ai_label": {
+      "Others": "40.23400115966797%",
+      "Kyc": "34.89500045776367%",
+      "Exchange": "24.871000289916992%"
+    },
+    "method": "dfs"
+  },
+  "3DvDPPyQsSrvvNtzrAGkqtrmuG2LgHaotY": {
+    "in_degree": 17,
+    "out_degree": 17,
+    "ai_label": {
+      "Kyc": "42.617000579833984%",
+      "Others": "34.16400146484375%",
+      "Exchange": "23.2189998626709%"
+    },
+    "method": "dfs"
+  },
+  "1JvCQXWTo8EgD3hV2nntpB39avciUMWwJC": {
+    "in_degree": 1,
+    "out_degree": 1,
+    "ai_label": {
+      "Others": "54.882999420166016%",
+      "Kyc": "23.381999969482422%",
+      "Exchange": "21.735000610351562%"
+    },
+    "method": "dfs"
+  },
+  "1Pr1NTM59bNEejzpojT7UbehjUm3Pn4KRh": {
+    "in_degree": 1,
+    "out_degree": 1,
+    "ai_label": {
+      "Others": "56.33100128173828%",
+      "Kyc": "22.198999404907227%",
+      "Exchange": "21.4689998626709%"
+    },
+    "method": "dfs"
+  },
+  "3FaA26QiCZoB1FvMb2xZ5YFEyhHhLPjTH9": {
+    "in_degree": 1,
+    "out_degree": 1,
+    "ai_label": {
+      "Others": "56.33100128173828%",
+      "Kyc": "22.198999404907227%",
+      "Exchange": "21.4689998626709%"
+    },
+    "method": "dfs"
+  },
+  "bc1qazny45mdeqh0xslf8lpzgkc5saxn38sgff9fsa4a958gpj6jus4sxc8j2c": {
+    "in_degree": 1,
+    "out_degree": 1,
+    "ai_label": {
+      "Others": "56.1510009765625%",
+      "Kyc": "22.350000381469727%",
+      "Exchange": "21.5%"
+    },
+    "method": "dfs"
+  },
+  "19KXpJ1f7EdLykiR9sQzpvc46Y4yLQT7gK": {
+    "in_degree": 2,
+    "out_degree": 2,
+    "ai_label": {
+      "Others": "57.17300033569336%",
+      "Kyc": "21.5310001373291%",
+      "Exchange": "21.295000076293945%"
+    },
+    "method": "dfs"
+  },
+  "bc1qz9nctzcd00zq9zffw7cdkgur3hgem9xg4lm8cq": {
+    "in_degree": 126,
+    "out_degree": 126,
+    "ai_label": {
+      "Kyc": "43.457000732421875%",
+      "Others": "33.104000091552734%",
+      "Exchange": "23.43899917602539%"
+    },
+    "method": "dfs"
+  },
+  "32cb2iyAQpyD32rM2MgNjT3ETUzshtTFq2": {
+    "in_degree": 1,
+    "out_degree": 1,
+    "ai_label": {
+      "Others": "56.33100128173828%",
+      "Kyc": "22.198999404907227%",
+      "Exchange": "21.4689998626709%"
+    },
+    "method": "dfs"
+  },
+  "3QCYJo5vUbMgDmMn2DVF77bqY3VbJkv5Mi": {
+    "in_degree": 122,
+    "out_degree": 125,
+    "ai_label": {
+      "Kyc": "54.06100082397461%",
+      "Others": "24.03700065612793%",
+      "Exchange": "21.900999069213867%"
+    },
+    "method": "dfs"
+  },
+  "3QGySJxam9epgNXYELBoeMr7q3PPbfPTYK": {
+    "in_degree": 1,
+    "out_degree": 1,
+    "ai_label": {
+      "Others": "56.45600128173828%",
+      "Kyc": "22.097999572753906%",
+      "Exchange": "21.445999145507812%"
+    },
+    "method": "dfs"
+  },
+  "bc1qjtt69gsg9m8sfc0p2ke02dx090pf8e8s6pmw4t": {
+    "in_degree": 22,
+    "out_degree": 22,
+    "ai_label": {
+      "Others": "49.9109992980957%",
+      "Kyc": "27.54199981689453%",
+      "Exchange": "22.547000885009766%"
+    },
+    "method": "dfs"
+  },
+  "bc1q0q3aejypywfek7wvpqxmjh7zw3f4waf3nfcamx": {
+    "in_degree": 1,
+    "out_degree": 1,
+    "ai_label": {
+      "Others": "56.861000061035156%",
+      "Kyc": "21.764999389648438%",
+      "Exchange": "21.374000549316406%"
+    },
+    "method": "dfs"
+  },
+  "3DfSU7f2S7XNuUb3Gs1Cgky777uzcAA5b6": {
+    "in_degree": 16,
+    "out_degree": 16,
+    "ai_label": {
+      "Kyc": "48.737998962402344%",
+      "Others": "28.5939998626709%",
+      "Exchange": "22.667999267578125%"
+    },
+    "method": "dfs"
+  },
+  "3KrcTJhFXn8PfTLoXuVBL6woZtJpE7cfAh": {
+    "in_degree": 1421,
+    "out_degree": 1418,
+    "ai_label": {
+      "Kyc": "56.512001037597656%",
+      "Others": "21.972999572753906%",
+      "Exchange": "21.513999938964844%"
+    },
+    "method": "dfs"
+  },
+  "3JBLZqXVsQUeT3yaVQTH5gZS7D7ZUcxF1q": {
+    "in_degree": 1,
+    "out_degree": 1,
+    "ai_label": {
+      "Others": "56.67599868774414%",
+      "Kyc": "21.929000854492188%",
+      "Exchange": "21.395999908447266%"
+    },
+    "method": "dfs"
+  },
+  "bc1qu36wwv6vzhtklmm4kdaugh7y4yumrfuhjextyl": {
+    "in_degree": 194,
+    "out_degree": 191,
+    "ai_label": {
+      "Kyc": "55.65399932861328%",
+      "Others": "22.66200065612793%",
+      "Exchange": "21.68400001525879%"
+    },
+    "method": "dfs"
+  },
+  "bc1qnl7c74hp97rnaeyulz46amxm0ek66zkjp48r35": {
+    "in_degree": 110,
+    "out_degree": 90,
+    "ai_label": {
+      "Kyc": "56.46099853515625%",
+      "Others": "22.07699966430664%",
+      "Exchange": "21.461999893188477%"
+    },
+    "method": "dfs"
+  },
+  "1ECmDNudgXwXt1QCMa4gXCKdbcQKAuPfnJ": {
+    "in_degree": 1,
+    "out_degree": 1,
+    "ai_label": {
+      "Others": "56.861000061035156%",
+      "Kyc": "21.764999389648438%",
+      "Exchange": "21.374000549316406%"
+    },
+    "method": "dfs"
+  },
+  "bc1qy3fkwu3thdfvyyrljvxrm2afa5uq36qw8nkf7y": {
+    "in_degree": 193,
+    "out_degree": 192,
+    "ai_label": {
+      "Kyc": "50.3120002746582%",
+      "Others": "27.0310001373291%",
+      "Exchange": "22.656999588012695%"
+    },
+    "method": "dfs"
+  },
+  "15LdjMvUaAnMXM1uWgqsArCxy9ssic3ccS": {
+    "in_degree": 20,
+    "out_degree": 20,
+    "ai_label": {
+      "Kyc": "48.737998962402344%",
+      "Others": "28.5939998626709%",
+      "Exchange": "22.667999267578125%"
+    },
+    "method": "dfs"
+  },
+  "34CZRVED7YpWVbXSPAbQkKWRo6gV5sruqa": {
+    "in_degree": 46,
+    "out_degree": 47,
+    "ai_label": {
+      "Kyc": "55.13600158691406%",
+      "Others": "23.15999984741211%",
+      "Exchange": "21.70400047302246%"
+    },
+    "method": "dfs"
+  },
+  "3DormGLq9xV5JWHwedHcAsFc4p7gBPa4G1": {
+    "in_degree": 1,
+    "out_degree": 1,
+    "ai_label": {
+      "Others": "56.1510009765625%",
+      "Kyc": "22.350000381469727%",
+      "Exchange": "21.5%"
+    },
+    "method": "dfs"
+  },
+  "3D8SGU6LaRHLQqk9rD1azoFC4Gq1T6rk6j": {
+    "in_degree": 1,
+    "out_degree": 1,
+    "ai_label": {
+      "Others": "56.33100128173828%",
+      "Kyc": "22.198999404907227%",
+      "Exchange": "21.4689998626709%"
+    },
+    "method": "dfs"
+  },
+  "37mzgWi1qwLRXjgDZkQ2aDdQ8aTdPnifX1": {
+    "in_degree": 2,
+    "out_degree": 2,
+    "ai_label": {
+      "Others": "56.33100128173828%",
+      "Kyc": "22.198999404907227%",
+      "Exchange": "21.4689998626709%"
+    },
+    "method": "dfs"
+  },
+  "37s6d7NvRhMFq4kQfJAMhxjvH6uYLiwEo4": {
+    "in_degree": 1,
+    "out_degree": 1,
+    "ai_label": {
+      "Others": "56.33100128173828%",
+      "Kyc": "22.198999404907227%",
+      "Exchange": "21.4689998626709%"
+    },
+    "method": "dfs"
+  },
+  "399Pz74QMLXenxrgd8cKeDcnaT9EyDLeNB": {
+    "in_degree": 1,
+    "out_degree": 1,
+    "ai_label": {
+      "Others": "56.67599868774414%",
+      "Kyc": "21.929000854492188%",
+      "Exchange": "21.395999908447266%"
+    },
+    "method": "dfs"
+  },
+  "bc1qk0lq372ryqr4l86fuxhda770qvmkhjw5f5s2xz": {
+    "in_degree": 391,
+    "out_degree": 391,
+    "ai_label": {
+      "Kyc": "55.1619987487793%",
+      "Others": "23.05699920654297%",
+      "Exchange": "21.780000686645508%"
+    },
+    "method": "dfs"
+  },
+  "bc1qygj0gtf5tfzf4pn733z9xurdpvdnqz6hh55r3d": {
+    "in_degree": 6,
+    "out_degree": 6,
+    "ai_label": {
+      "Others": "57.1150016784668%",
+      "Kyc": "21.582000732421875%",
+      "Exchange": "21.304000854492188%"
+    },
+    "method": "dfs"
+  },
+  "bc1qdewjj7474r0pc0ak3nuj6h5f6vm8c56lwm2kfw": {
+    "in_degree": 170,
+    "out_degree": 170,
+    "ai_label": {
+      "Kyc": "53.3489990234375%",
+      "Others": "24.5049991607666%",
+      "Exchange": "22.145000457763672%"
+    },
+    "method": "dfs"
+  },
+  "39hcnBgjzeoMHQFJNY4UFzg55ZK5KiDvpi": {
+    "in_degree": 54,
+    "out_degree": 54,
+    "ai_label": {
+      "Kyc": "54.755001068115234%",
+      "Others": "23.45400047302246%",
+      "Exchange": "21.791000366210938%"
+    },
+    "method": "dfs"
+  },
+  "32zEmcr96j7cd362GNdHRHDZ4dXkP7feNy": {
+    "in_degree": 1,
+    "out_degree": 1,
+    "ai_label": {
+      "Others": "56.33100128173828%",
+      "Kyc": "22.198999404907227%",
+      "Exchange": "21.4689998626709%"
+    },
+    "method": "dfs"
+  },
+  "3AqStbWEwT9mvNvwVQsNRpADHkguhCS1AM": {
+    "in_degree": 1,
+    "out_degree": 1,
+    "ai_label": {
+      "Others": "56.42900085449219%",
+      "Kyc": "22.110000610351562%",
+      "Exchange": "21.459999084472656%"
+    },
+    "method": "dfs"
+  },
+  "3CuiWsiYiSsBeV3gHX58HqXNbAMoVRSx5b": {
+    "in_degree": 1,
+    "out_degree": 1,
+    "ai_label": {
+      "Others": "56.1510009765625%",
+      "Kyc": "22.350000381469727%",
+      "Exchange": "21.5%"
+    },
+    "method": "dfs"
+  },
+  "bc1q3v85dj237cdh6999pjtwd06cmet204uzf4cshf": {
+    "in_degree": 1,
+    "out_degree": 1,
+    "ai_label": {
+      "Others": "56.33100128173828%",
+      "Kyc": "22.198999404907227%",
+      "Exchange": "21.4689998626709%"
+    },
+    "method": "dfs"
+  },
+  "3DSxayiL2GnwbX3bmFW6iqH7gMMrRXb2RQ": {
+    "in_degree": 1,
+    "out_degree": 1,
+    "ai_label": {
+      "Others": "56.42900085449219%",
+      "Kyc": "22.110000610351562%",
+      "Exchange": "21.459999084472656%"
+    },
+    "method": "dfs"
+  },
+  "3DwKQbmFNWDeY2tWZ5x2oH3UhzZXDgWQiv": {
+    "in_degree": 1,
+    "out_degree": 1,
+    "ai_label": {
+      "Others": "56.67599868774414%",
+      "Kyc": "21.929000854492188%",
+      "Exchange": "21.395999908447266%"
+    },
+    "method": "dfs"
+  },
+  "1GEwKn1VeAbwfWGGcYQcqjpUzmvAq3xqQ9": {
+    "in_degree": 1,
+    "out_degree": 1,
+    "ai_label": {
+      "Others": "54.882999420166016%",
+      "Kyc": "23.381999969482422%",
+      "Exchange": "21.735000610351562%"
+    },
+    "method": "dfs"
+  },
+  "bc1qjvxxmv7hhmkpf3zrmxlur58fkk8ccr0z35agrl": {
+    "in_degree": 88,
+    "out_degree": 88,
+    "ai_label": {
+      "Others": "41.766998291015625%",
+      "Kyc": "34.29199981689453%",
+      "Exchange": "23.94099998474121%"
+    },
+    "method": "dfs"
+  },
+  "bc1qv8tr88rdyg5wnpn00p6rcle0vxrv2jvg27tl75": {
+    "in_degree": 1,
+    "out_degree": 0,
+    "ai_label": {
+      "Others": "57.332000732421875%",
+      "Kyc": "21.4060001373291%",
+      "Exchange": "21.261999130249023%"
+    },
+    "method": "dfs"
+  },
+  "3BbTEwcofLpGC14C24Dftzc5waWPhgeqRB": {
+    "in_degree": 36,
+    "out_degree": 36,
+    "ai_label": {
+      "Others": "51.3650016784668%",
+      "Kyc": "26.281999588012695%",
+      "Exchange": "22.35300064086914%"
+    },
+    "method": "dfs"
+  },
   "327kGKompmdSmrNkruU49FzZqx2pGiihvw": {
     "in_degree": 13190,
     "out_degree": 13224,
@@ -10,25 +1070,913 @@
     },
     "method": "dfs"
   },
+  "3Fwp33ymGuEJ7v2NkzKwcUgU12CNJWooeV": {
+    "in_degree": 4,
+    "out_degree": 4,
+    "ai_label": {
+      "Others": "55.07699966430664%",
+      "Kyc": "23.21299934387207%",
+      "Exchange": "21.708999633789062%"
+    },
+    "method": "dfs"
+  },
+  "bc1qa9hecra26h3dhjsu73t7mutx803qenq9tqmmek0r7sm8th3kcl0sf5kza4": {
+    "in_degree": 1,
+    "out_degree": 1,
+    "ai_label": {
+      "Others": "56.1510009765625%",
+      "Kyc": "22.350000381469727%",
+      "Exchange": "21.5%"
+    },
+    "method": "dfs"
+  },
+  "36o9L41ht3HXmYeHR9gPa1VPB8a79MXmQz": {
+    "in_degree": 203,
+    "out_degree": 194,
+    "ai_label": {
+      "Others": "45.45800018310547%",
+      "Kyc": "31.386999130249023%",
+      "Exchange": "23.155000686645508%"
+    },
+    "method": "dfs"
+  },
+  "bc1q6k8vtf7z9ngcxzeuc305kawm4vgl6y4epgpwja": {
+    "in_degree": 88,
+    "out_degree": 85,
+    "ai_label": {
+      "Others": "40.64699935913086%",
+      "Kyc": "35.67300033569336%",
+      "Exchange": "23.68000030517578%"
+    },
+    "method": "dfs"
+  },
+  "36WsNprcfSSEXogL8nG2r7FXXTtDmi7cq8": {
+    "in_degree": 1,
+    "out_degree": 1,
+    "ai_label": {
+      "Others": "56.67599868774414%",
+      "Kyc": "21.929000854492188%",
+      "Exchange": "21.395999908447266%"
+    },
+    "method": "dfs"
+  },
+  "bc1qey4hg0xfvqxvvx03qt9vzqtyt7xct65lxwkx58": {
+    "in_degree": 3,
+    "out_degree": 3,
+    "ai_label": {
+      "Others": "56.33100128173828%",
+      "Kyc": "22.198999404907227%",
+      "Exchange": "21.4689998626709%"
+    },
+    "method": "dfs"
+  },
+  "37CzchppDBygGApV7Grab9tSyzW41EoPWG": {
+    "in_degree": 1,
+    "out_degree": 1,
+    "ai_label": {
+      "Others": "57.4370002746582%",
+      "Kyc": "21.326000213623047%",
+      "Exchange": "21.23699951171875%"
+    },
+    "method": "dfs"
+  },
+  "3A97AuuoFPGStKqUvGGD2VNJric8ETeWNt": {
+    "in_degree": 8,
+    "out_degree": 8,
+    "ai_label": {
+      "Others": "56.9109992980957%",
+      "Kyc": "21.743999481201172%",
+      "Exchange": "21.344999313354492%"
+    },
+    "method": "dfs"
+  },
+  "bc1q20yye90cehtaep5m06njh787ug9s3ervzkjnc3": {
+    "in_degree": 1,
+    "out_degree": 1,
+    "ai_label": {
+      "Others": "57.29800033569336%",
+      "Kyc": "21.437000274658203%",
+      "Exchange": "21.266000747680664%"
+    },
+    "method": "dfs"
+  },
+  "3LapwVbmKfemJhVCT347sFSRVTU7ahPBtn": {
+    "in_degree": 86,
+    "out_degree": 86,
+    "ai_label": {
+      "Kyc": "52.638999938964844%",
+      "Others": "25.145999908447266%",
+      "Exchange": "22.21500015258789%"
+    },
+    "method": "dfs"
+  },
+  "bc1q2mzjcda307psvqexjyhf9uchmhkf8lvphmfpz8": {
+    "in_degree": 1,
+    "out_degree": 1,
+    "ai_label": {
+      "Others": "56.87300109863281%",
+      "Kyc": "21.733999252319336%",
+      "Exchange": "21.39299964904785%"
+    },
+    "method": "dfs"
+  },
+  "bc1q0p34e5knrsphdergd7lmld57n2fmpwwrq73rqn": {
+    "in_degree": 6,
+    "out_degree": 6,
+    "ai_label": {
+      "Others": "54.41400146484375%",
+      "Kyc": "23.76300048828125%",
+      "Exchange": "21.822999954223633%"
+    },
+    "method": "dfs"
+  },
+  "bc1qpp08680nzf864v47ap987t2352v8vuzc0yud9f": {
+    "in_degree": 11,
+    "out_degree": 11,
+    "ai_label": {
+      "Others": "50.10100173950195%",
+      "Kyc": "27.385000228881836%",
+      "Exchange": "22.513999938964844%"
+    },
+    "method": "dfs"
+  },
+  "37zbgvcRZjM7HLMtbKS4ej9jyuGTq4oWnB": {
+    "in_degree": 1,
+    "out_degree": 1,
+    "ai_label": {
+      "Others": "56.33100128173828%",
+      "Kyc": "22.198999404907227%",
+      "Exchange": "21.4689998626709%"
+    },
+    "method": "dfs"
+  },
+  "3AuhcQtcgu813KyJeFXP15KpTxWrjvrmYy": {
+    "in_degree": 1,
+    "out_degree": 1,
+    "ai_label": {
+      "Others": "57.332000732421875%",
+      "Kyc": "21.4060001373291%",
+      "Exchange": "21.261999130249023%"
+    },
+    "method": "dfs"
+  },
+  "bc1quazjxfhrwkl3spa0ggz2aylu93h0vkegjuwr32": {
+    "in_degree": 1,
+    "out_degree": 1,
+    "ai_label": {
+      "Others": "56.33100128173828%",
+      "Kyc": "22.198999404907227%",
+      "Exchange": "21.4689998626709%"
+    },
+    "method": "dfs"
+  },
+  "3Bm4SYyCUhmu3y77hZ2yMYSgZga8U3ULRC": {
+    "in_degree": 1,
+    "out_degree": 1,
+    "ai_label": {
+      "Others": "56.1510009765625%",
+      "Kyc": "22.350000381469727%",
+      "Exchange": "21.5%"
+    },
+    "method": "dfs"
+  },
+  "3D5ZuP3RBdP4QhEn3P3ZFeWCMS5oZkyjHa": {
+    "in_degree": 3,
+    "out_degree": 3,
+    "ai_label": {
+      "Others": "56.1510009765625%",
+      "Kyc": "22.350000381469727%",
+      "Exchange": "21.5%"
+    },
+    "method": "dfs"
+  },
+  "19vD69G7yAApTD6JGez88pP4Y3XAwQtTTt": {
+    "in_degree": 6,
+    "out_degree": 6,
+    "ai_label": {
+      "Others": "57.17300033569336%",
+      "Kyc": "21.5310001373291%",
+      "Exchange": "21.295000076293945%"
+    },
+    "method": "dfs"
+  },
+  "34fRbRkqJEmTqLbs1vSvJroUi92yMbj8Fq": {
+    "in_degree": 1,
+    "out_degree": 1,
+    "ai_label": {
+      "Others": "56.33100128173828%",
+      "Kyc": "22.198999404907227%",
+      "Exchange": "21.4689998626709%"
+    },
+    "method": "dfs"
+  },
+  "bc1q828u6uv0k30q8y7q8kyf3zrv3etykckz9pru4t": {
+    "in_degree": 150,
+    "out_degree": 150,
+    "ai_label": {
+      "Kyc": "56.744998931884766%",
+      "Others": "21.8439998626709%",
+      "Exchange": "21.410999298095703%"
+    },
+    "method": "dfs"
+  },
+  "1Hi9g9d2ouDJRTFeZcAsjHKyg7Nk9iKU5K": {
+    "in_degree": 15,
+    "out_degree": 15,
+    "ai_label": {
+      "Others": "51.88399887084961%",
+      "Kyc": "25.8439998626709%",
+      "Exchange": "22.27199935913086%"
+    },
+    "method": "dfs"
+  },
+  "1Knv2vBdhgCYR8HiAVP8ZraUZvEYbJAaqX": {
+    "in_degree": 7,
+    "out_degree": 7,
+    "ai_label": {
+      "Others": "54.41400146484375%",
+      "Kyc": "23.76300048828125%",
+      "Exchange": "21.822999954223633%"
+    },
+    "method": "dfs"
+  },
   "3Ai97uJfrC8kLUdgydLPfKFwFmAE5s9b7t": {
     "in_degree": 2882,
     "out_degree": 2846,
     "ai_label": {
-      "exchange": "80%",
-      "others": "15%",
-      "kyc": "5%",
-      "scam": "0%"
+      "Kyc": "48.74700164794922%",
+      "Others": "28.31100082397461%",
+      "Exchange": "22.94300079345703%"
     },
     "method": "dfs"
   },
-  "bc1qkfu7qztm2zc07mg7z0f49m6uw3jp9y2yq884ax": {
-    "in_degree": 1512,
-    "out_degree": 379,
+  "3GfHYuth6XjA2P47XEUHd6VhDUTdATwKC6": {
+    "in_degree": 1,
+    "out_degree": 1,
     "ai_label": {
-      "exchange": "80%",
-      "others": "15%",
-      "kyc": "5%",
-      "scam": "0%"
+      "Others": "56.1510009765625%",
+      "Kyc": "22.350000381469727%",
+      "Exchange": "21.5%"
+    },
+    "method": "dfs"
+  },
+  "3DfqgA6zcGfiQymcK7wJDaYwWsr2acKyQL": {
+    "in_degree": 1,
+    "out_degree": 1,
+    "ai_label": {
+      "Others": "56.33100128173828%",
+      "Kyc": "22.198999404907227%",
+      "Exchange": "21.4689998626709%"
+    },
+    "method": "dfs"
+  },
+  "375YaL6jyLx8Lr9dpLa3gJeLUwEeZTAxLc": {
+    "in_degree": 250,
+    "out_degree": 248,
+    "ai_label": {
+      "Kyc": "51.91600036621094%",
+      "Others": "25.61400032043457%",
+      "Exchange": "22.469999313354492%"
+    },
+    "method": "dfs"
+  },
+  "3FoSJWszJaJjMSBwyBDim8uRkHBEN3iEzW": {
+    "in_degree": 1,
+    "out_degree": 1,
+    "ai_label": {
+      "Others": "56.33100128173828%",
+      "Kyc": "22.198999404907227%",
+      "Exchange": "21.4689998626709%"
+    },
+    "method": "dfs"
+  },
+  "3HtK6hxgr7LiZQocA23xhQLiqgyAVhxWM2": {
+    "in_degree": 1,
+    "out_degree": 1,
+    "ai_label": {
+      "Others": "56.67599868774414%",
+      "Kyc": "21.929000854492188%",
+      "Exchange": "21.395999908447266%"
+    },
+    "method": "dfs"
+  },
+  "35uQjASKJGG5T5pW6cJyG1B5pQP1Z7KYBw": {
+    "in_degree": 1,
+    "out_degree": 1,
+    "ai_label": {
+      "Others": "57.332000732421875%",
+      "Kyc": "21.4060001373291%",
+      "Exchange": "21.261999130249023%"
+    },
+    "method": "dfs"
+  },
+  "3Jjc5ybhFYskvRV4KPXaPqZbLcS3sAjLt2": {
+    "in_degree": 1,
+    "out_degree": 1,
+    "ai_label": {
+      "Others": "56.33100128173828%",
+      "Kyc": "22.198999404907227%",
+      "Exchange": "21.4689998626709%"
+    },
+    "method": "dfs"
+  },
+  "bc1q3e0af2af5vkrjvpeahx243sp9xyjd3xpjxhnzs": {
+    "in_degree": 58,
+    "out_degree": 58,
+    "ai_label": {
+      "Kyc": "55.40399932861328%",
+      "Others": "22.944000244140625%",
+      "Exchange": "21.652000427246094%"
+    },
+    "method": "dfs"
+  },
+  "3LYZqsmREVm9bumMm4nUZZ8XfJbALomL8a": {
+    "in_degree": 1,
+    "out_degree": 1,
+    "ai_label": {
+      "Others": "56.33100128173828%",
+      "Kyc": "22.198999404907227%",
+      "Exchange": "21.4689998626709%"
+    },
+    "method": "dfs"
+  },
+  "1GXENBLdgYq5La1u4vDo9pGkm2kPGKN4E1": {
+    "in_degree": 418,
+    "out_degree": 419,
+    "ai_label": {
+      "Others": "44.40399932861328%",
+      "Kyc": "32.334999084472656%",
+      "Exchange": "23.26099967956543%"
+    },
+    "method": "dfs"
+  },
+  "33Z1dxb3f4yGLPYv5LQP4zeJonAopfFhUM": {
+    "in_degree": 39,
+    "out_degree": 39,
+    "ai_label": {
+      "Kyc": "55.13600158691406%",
+      "Others": "23.15999984741211%",
+      "Exchange": "21.70400047302246%"
+    },
+    "method": "dfs"
+  },
+  "bc1q52mcdeyse7mc39pwvcmqdlqv3u67nxt0m6ecf7": {
+    "in_degree": 1,
+    "out_degree": 1,
+    "ai_label": {
+      "Others": "56.33100128173828%",
+      "Kyc": "22.198999404907227%",
+      "Exchange": "21.4689998626709%"
+    },
+    "method": "dfs"
+  },
+  "1BzPZkzoTHavKBo9kSskJaq4oFTgjehGyx": {
+    "in_degree": 142,
+    "out_degree": 142,
+    "ai_label": {
+      "Others": "38.68600082397461%",
+      "Kyc": "37.965999603271484%",
+      "Exchange": "23.347999572753906%"
+    },
+    "method": "dfs"
+  },
+  "bc1qrgtasea7fqp8qnr2jk3jf83qw835373drfqp9s": {
+    "in_degree": 1,
+    "out_degree": 1,
+    "ai_label": {
+      "Others": "54.882999420166016%",
+      "Kyc": "23.381999969482422%",
+      "Exchange": "21.735000610351562%"
+    },
+    "method": "dfs"
+  },
+  "3Fr8r4D5CjH42PejcwMmTfkFTPT5n74Szk": {
+    "in_degree": 15,
+    "out_degree": 15,
+    "ai_label": {
+      "Others": "53.797000885009766%",
+      "Kyc": "24.23699951171875%",
+      "Exchange": "21.965999603271484%"
+    },
+    "method": "dfs"
+  },
+  "3AF9v22umTmZEZW7oVjrBxxZZFZHLPKCRk": {
+    "in_degree": 1,
+    "out_degree": 1,
+    "ai_label": {
+      "Others": "56.861000061035156%",
+      "Kyc": "21.764999389648438%",
+      "Exchange": "21.374000549316406%"
+    },
+    "method": "dfs"
+  },
+  "3Hj9YK7gcdWEwbeL78qUDJ44TNkbtwD8xf": {
+    "in_degree": 151,
+    "out_degree": 151,
+    "ai_label": {
+      "Kyc": "56.46099853515625%",
+      "Others": "22.07699966430664%",
+      "Exchange": "21.461999893188477%"
+    },
+    "method": "dfs"
+  },
+  "36emVA8uy7mQrkgPWbLP2doepeBxcLJVJ6": {
+    "in_degree": 1,
+    "out_degree": 1,
+    "ai_label": {
+      "Others": "56.861000061035156%",
+      "Kyc": "21.764999389648438%",
+      "Exchange": "21.374000549316406%"
+    },
+    "method": "dfs"
+  },
+  "3P94WLBsCb5QCfqYcNQzfQYFjoDe8DDKgD": {
+    "in_degree": 1,
+    "out_degree": 1,
+    "ai_label": {
+      "Others": "56.861000061035156%",
+      "Kyc": "21.764999389648438%",
+      "Exchange": "21.374000549316406%"
+    },
+    "method": "dfs"
+  },
+  "bc1qczlu2p5rn8j25rs6jsfv9c4xf72q3ay5thkltx": {
+    "in_degree": 1,
+    "out_degree": 1,
+    "ai_label": {
+      "Others": "56.85900115966797%",
+      "Kyc": "21.7450008392334%",
+      "Exchange": "21.395999908447266%"
+    },
+    "method": "dfs"
+  },
+  "3GAw4vaisu3eXJCEkKot7ZWttih7DMPdzD": {
+    "in_degree": 1,
+    "out_degree": 1,
+    "ai_label": {
+      "Others": "56.861000061035156%",
+      "Kyc": "21.764999389648438%",
+      "Exchange": "21.374000549316406%"
+    },
+    "method": "dfs"
+  },
+  "3NKY7GuGhXefjvoWw63BFaLcBd3R2ix82E": {
+    "in_degree": 1,
+    "out_degree": 1,
+    "ai_label": {
+      "Others": "56.861000061035156%",
+      "Kyc": "21.764999389648438%",
+      "Exchange": "21.374000549316406%"
+    },
+    "method": "dfs"
+  },
+  "3E5XzSJzpUppMgxkyTozxKFv6Xhceu9hiM": {
+    "in_degree": 1,
+    "out_degree": 1,
+    "ai_label": {
+      "Others": "56.861000061035156%",
+      "Kyc": "21.764999389648438%",
+      "Exchange": "21.374000549316406%"
+    },
+    "method": "dfs"
+  },
+  "bc1qlgnsatqcvq5xd3wyfa56eget07z3rdepg4n548": {
+    "in_degree": 1,
+    "out_degree": 1,
+    "ai_label": {
+      "Others": "56.85900115966797%",
+      "Kyc": "21.7450008392334%",
+      "Exchange": "21.395999908447266%"
+    },
+    "method": "dfs"
+  },
+  "37xfmoSrzRSEWsvpi7kRvc9zDSbPx5xwnT": {
+    "in_degree": 1,
+    "out_degree": 1,
+    "ai_label": {
+      "Others": "56.33100128173828%",
+      "Kyc": "22.198999404907227%",
+      "Exchange": "21.4689998626709%"
+    },
+    "method": "dfs"
+  },
+  "1MUjEVAmi4otJGorA3XQqYhZt1T5f7K8hd": {
+    "in_degree": 1,
+    "out_degree": 1,
+    "ai_label": {
+      "Others": "56.33100128173828%",
+      "Kyc": "22.198999404907227%",
+      "Exchange": "21.4689998626709%"
+    },
+    "method": "dfs"
+  },
+  "3KD78zbqdkgNLs5mMkbWQSKdkm7CNLbqNh": {
+    "in_degree": 2,
+    "out_degree": 2,
+    "ai_label": {
+      "Others": "56.67599868774414%",
+      "Kyc": "21.929000854492188%",
+      "Exchange": "21.395999908447266%"
+    },
+    "method": "dfs"
+  },
+  "3PeSovDbsuqwHVN6ojTYsLDVcgeckMRB1H": {
+    "in_degree": 1,
+    "out_degree": 1,
+    "ai_label": {
+      "Others": "57.14099884033203%",
+      "Kyc": "21.551000595092773%",
+      "Exchange": "21.30699920654297%"
+    },
+    "method": "dfs"
+  },
+  "32QYVwQbxFk3T2jHq7osTZHAN5dZxoRp8m": {
+    "in_degree": 1,
+    "out_degree": 1,
+    "ai_label": {
+      "Others": "57.14099884033203%",
+      "Kyc": "21.551000595092773%",
+      "Exchange": "21.30699920654297%"
+    },
+    "method": "dfs"
+  },
+  "bc1qladn2dqr5yq2tqvcvvefgjs2gcggupt4mjcew0": {
+    "in_degree": 1,
+    "out_degree": 1,
+    "ai_label": {
+      "Others": "56.861000061035156%",
+      "Kyc": "21.764999389648438%",
+      "Exchange": "21.374000549316406%"
+    },
+    "method": "dfs"
+  },
+  "1MBfa4JVbFFP7939NpaBcCAQPmdEMr31hK": {
+    "in_degree": 1,
+    "out_degree": 1,
+    "ai_label": {
+      "Others": "56.861000061035156%",
+      "Kyc": "21.764999389648438%",
+      "Exchange": "21.374000549316406%"
+    },
+    "method": "dfs"
+  },
+  "bc1qytmhr48kyk4mahdf69xf3k0zhnfc3wxvkgmpf7": {
+    "in_degree": 1,
+    "out_degree": 1,
+    "ai_label": {
+      "Others": "57.012001037597656%",
+      "Kyc": "21.62299919128418%",
+      "Exchange": "21.364999771118164%"
+    },
+    "method": "dfs"
+  },
+  "3J9sjZnniQFrB1dUpYq8oSgerfSXavuHUN": {
+    "in_degree": 1,
+    "out_degree": 1,
+    "ai_label": {
+      "Others": "56.805999755859375%",
+      "Kyc": "21.825000762939453%",
+      "Exchange": "21.368999481201172%"
+    },
+    "method": "dfs"
+  },
+  "bc1qylqe92hln00humxz0xt0j4pd8at6mqweu5t6ga": {
+    "in_degree": 1,
+    "out_degree": 1,
+    "ai_label": {
+      "Others": "56.33100128173828%",
+      "Kyc": "22.198999404907227%",
+      "Exchange": "21.4689998626709%"
+    },
+    "method": "dfs"
+  },
+  "3K6ewy1UdQYhERzqfqbGyTeY2KqYZdjLtq": {
+    "in_degree": 1,
+    "out_degree": 1,
+    "ai_label": {
+      "Others": "56.67599868774414%",
+      "Kyc": "21.929000854492188%",
+      "Exchange": "21.395999908447266%"
+    },
+    "method": "dfs"
+  },
+  "3LGUYHAN2BDtyBbvuZt1T1vrD8oJxvibcM": {
+    "in_degree": 1,
+    "out_degree": 1,
+    "ai_label": {
+      "Others": "56.33100128173828%",
+      "Kyc": "22.198999404907227%",
+      "Exchange": "21.4689998626709%"
+    },
+    "method": "dfs"
+  },
+  "3DhRLcr9muwYRUHkAaVwqkNEC8rJPsHsEd": {
+    "in_degree": 1539,
+    "out_degree": 1542,
+    "ai_label": {
+      "Kyc": "55.0989990234375%",
+      "Others": "22.98900032043457%",
+      "Exchange": "21.91200065612793%"
+    },
+    "method": "dfs"
+  },
+  "3NaeNzuiresFircZnPg1RxEUSJbtGv6ZMH": {
+    "in_degree": 38,
+    "out_degree": 38,
+    "ai_label": {
+      "Kyc": "55.10599899291992%",
+      "Others": "23.165000915527344%",
+      "Exchange": "21.729000091552734%"
+    },
+    "method": "dfs"
+  },
+  "32BP9fLrSF3wHiJjGWtkuNmdbEXva6BmVB": {
+    "in_degree": 1,
+    "out_degree": 0,
+    "ai_label": {
+      "Others": "57.332000732421875%",
+      "Kyc": "21.4060001373291%",
+      "Exchange": "21.261999130249023%"
+    },
+    "method": "dfs"
+  },
+  "3J1ejc8ihEcuuPv82fUUCKfwvLUt3vhZJM": {
+    "in_degree": 1,
+    "out_degree": 1,
+    "ai_label": {
+      "Others": "56.861000061035156%",
+      "Kyc": "21.764999389648438%",
+      "Exchange": "21.374000549316406%"
+    },
+    "method": "dfs"
+  },
+  "bc1q6v69kwxr9z0p65fd68zg5j0776vu5c6plz6ukm": {
+    "in_degree": 1,
+    "out_degree": 1,
+    "ai_label": {
+      "Others": "56.33100128173828%",
+      "Kyc": "22.198999404907227%",
+      "Exchange": "21.4689998626709%"
+    },
+    "method": "dfs"
+  },
+  "3MMvAjNgbKRm64mgmWrPbutGivgTWdCUZF": {
+    "in_degree": 1,
+    "out_degree": 1,
+    "ai_label": {
+      "Others": "56.67599868774414%",
+      "Kyc": "21.929000854492188%",
+      "Exchange": "21.395999908447266%"
+    },
+    "method": "dfs"
+  },
+  "1F2WoVSAix5hMmRonnmvBugdX1S5wAvv2N": {
+    "in_degree": 5,
+    "out_degree": 3,
+    "ai_label": {
+      "Others": "49.25199890136719%",
+      "Kyc": "28.14900016784668%",
+      "Exchange": "22.599000930786133%"
+    },
+    "method": "dfs"
+  },
+  "3B4YjXgM6JaJkuL2jfpu8rGuXj3SbCoJKd": {
+    "in_degree": 1,
+    "out_degree": 1,
+    "ai_label": {
+      "Others": "56.86800003051758%",
+      "Kyc": "21.768999099731445%",
+      "Exchange": "21.363000869750977%"
+    },
+    "method": "dfs"
+  },
+  "37sKLP7KCacb13nb7c16WGeXkakHiw63ta": {
+    "in_degree": 26,
+    "out_degree": 26,
+    "ai_label": {
+      "Kyc": "49.42100143432617%",
+      "Others": "27.993999481201172%",
+      "Exchange": "22.586000442504883%"
+    },
+    "method": "dfs"
+  },
+  "394KL679kZ6qVPfvsLVg3GPWnpyi4q84xa": {
+    "in_degree": 1,
+    "out_degree": 1,
+    "ai_label": {
+      "Others": "56.805999755859375%",
+      "Kyc": "21.825000762939453%",
+      "Exchange": "21.368999481201172%"
+    },
+    "method": "dfs"
+  },
+  "3GvcndfNH4UkTg54UgbBXdnwY5RmhjxtEJ": {
+    "in_degree": 52,
+    "out_degree": 51,
+    "ai_label": {
+      "Kyc": "56.95800018310547%",
+      "Others": "21.70199966430664%",
+      "Exchange": "21.34000015258789%"
+    },
+    "method": "dfs"
+  },
+  "3CtzzC9RALRB1fcT4gRcvFdmEtoM8RBAk3": {
+    "in_degree": 1,
+    "out_degree": 1,
+    "ai_label": {
+      "Others": "56.33100128173828%",
+      "Kyc": "22.198999404907227%",
+      "Exchange": "21.4689998626709%"
+    },
+    "method": "dfs"
+  },
+  "3JY4a4jeJY3oVkb2ytrbdteGQhdzx7kbXb": {
+    "in_degree": 1,
+    "out_degree": 1,
+    "ai_label": {
+      "Others": "56.67599868774414%",
+      "Kyc": "21.929000854492188%",
+      "Exchange": "21.395999908447266%"
+    },
+    "method": "dfs"
+  },
+  "1KUKmp55FPGiNhg7kRZSDL2EBVrFDV5qZN": {
+    "in_degree": 1,
+    "out_degree": 1,
+    "ai_label": {
+      "Others": "56.67599868774414%",
+      "Kyc": "21.929000854492188%",
+      "Exchange": "21.395999908447266%"
+    },
+    "method": "dfs"
+  },
+  "31rW653z41yg7ChHoPTrXyurzjoyVbyQqW": {
+    "in_degree": 1,
+    "out_degree": 1,
+    "ai_label": {
+      "Others": "57.14099884033203%",
+      "Kyc": "21.551000595092773%",
+      "Exchange": "21.30699920654297%"
+    },
+    "method": "dfs"
+  },
+  "376ccpksdh9wXfnmAnGqynUKeh5i2AczAY": {
+    "in_degree": 1,
+    "out_degree": 1,
+    "ai_label": {
+      "Others": "56.67599868774414%",
+      "Kyc": "21.929000854492188%",
+      "Exchange": "21.395999908447266%"
+    },
+    "method": "dfs"
+  },
+  "bc1qtf84mlrf0plfqs04cjxug25upa3fzp7uzqpwga": {
+    "in_degree": 1,
+    "out_degree": 1,
+    "ai_label": {
+      "Others": "56.33100128173828%",
+      "Kyc": "22.198999404907227%",
+      "Exchange": "21.4689998626709%"
+    },
+    "method": "dfs"
+  },
+  "16bV4j11oezmr4xtCxZoTJS2UA5Cfvda3D": {
+    "in_degree": 1,
+    "out_degree": 1,
+    "ai_label": {
+      "Others": "56.88399887084961%",
+      "Kyc": "21.756000518798828%",
+      "Exchange": "21.360000610351562%"
+    },
+    "method": "dfs"
+  },
+  "3EdfDhB5foAf1t4NDT3rSM8Du7rHUDbpDF": {
+    "in_degree": 1,
+    "out_degree": 1,
+    "ai_label": {
+      "Others": "56.805999755859375%",
+      "Kyc": "21.825000762939453%",
+      "Exchange": "21.368999481201172%"
+    },
+    "method": "dfs"
+  },
+  "38jA5wvhZmyXjVEegwHtYsMPRqk763mK1K": {
+    "in_degree": 1,
+    "out_degree": 1,
+    "ai_label": {
+      "Others": "56.67599868774414%",
+      "Kyc": "21.929000854492188%",
+      "Exchange": "21.395999908447266%"
+    },
+    "method": "dfs"
+  },
+  "3L1L7RYvmoqECtRY6Dvfeehpgso8mZeoc7": {
+    "in_degree": 1,
+    "out_degree": 1,
+    "ai_label": {
+      "Others": "56.1510009765625%",
+      "Kyc": "22.350000381469727%",
+      "Exchange": "21.5%"
+    },
+    "method": "dfs"
+  },
+  "bc1qzcwqkup665yf8pn4gxlaa39dfcena9q6kg59yq": {
+    "in_degree": 1,
+    "out_degree": 1,
+    "ai_label": {
+      "Others": "56.33100128173828%",
+      "Kyc": "22.198999404907227%",
+      "Exchange": "21.4689998626709%"
+    },
+    "method": "dfs"
+  },
+  "12XjpWKnJq5fmsBrmctU9yYsiop11LHpcy": {
+    "in_degree": 18,
+    "out_degree": 18,
+    "ai_label": {
+      "Kyc": "48.737998962402344%",
+      "Others": "28.5939998626709%",
+      "Exchange": "22.667999267578125%"
+    },
+    "method": "dfs"
+  },
+  "3KV8gSoPdjqEvgC4Y8YNvmKrUzmy5MFWg2": {
+    "in_degree": 1,
+    "out_degree": 1,
+    "ai_label": {
+      "Others": "56.33100128173828%",
+      "Kyc": "22.198999404907227%",
+      "Exchange": "21.4689998626709%"
+    },
+    "method": "dfs"
+  },
+  "1JyrxMkEiEosrbj523fnKBXUfTuXzYupLo": {
+    "in_degree": 16,
+    "out_degree": 16,
+    "ai_label": {
+      "Others": "51.72800064086914%",
+      "Kyc": "25.989999771118164%",
+      "Exchange": "22.281999588012695%"
+    },
+    "method": "dfs"
+  },
+  "185ZfuFU32kUBDw4HG4LbQdCK8FrtpsdqX": {
+    "in_degree": 1,
+    "out_degree": 1,
+    "ai_label": {
+      "Others": "56.861000061035156%",
+      "Kyc": "21.764999389648438%",
+      "Exchange": "21.374000549316406%"
+    },
+    "method": "dfs"
+  },
+  "bc1qsart6wj8vvxy6x45t5h2xqe5t9zedwmt6p8wua": {
+    "in_degree": 1,
+    "out_degree": 1,
+    "ai_label": {
+      "Others": "56.88399887084961%",
+      "Kyc": "21.756000518798828%",
+      "Exchange": "21.360000610351562%"
+    },
+    "method": "dfs"
+  },
+  "3GERcyL8zq7qt4Kx2zDMGkpnkDbUmhxKY8": {
+    "in_degree": 1,
+    "out_degree": 1,
+    "ai_label": {
+      "Others": "56.33100128173828%",
+      "Kyc": "22.198999404907227%",
+      "Exchange": "21.4689998626709%"
+    },
+    "method": "dfs"
+  },
+  "3N7iuXw6ZADLKV25tuoWhNrCsmh2ddavmM": {
+    "in_degree": 1,
+    "out_degree": 1,
+    "ai_label": {
+      "Others": "57.332000732421875%",
+      "Kyc": "21.4060001373291%",
+      "Exchange": "21.261999130249023%"
+    },
+    "method": "dfs"
+  },
+  "35D8UR6GRfmrvhFoffVsPwCet4g2zcsVeb": {
+    "in_degree": 1,
+    "out_degree": 1,
+    "ai_label": {
+      "Others": "57.14099884033203%",
+      "Kyc": "21.551000595092773%",
+      "Exchange": "21.30699920654297%"
+    },
+    "method": "dfs"
+  },
+  "39M76bFwUaxHjLwDRyVMjN9Sj7fx2RZa7d": {
+    "in_degree": 2,
+    "out_degree": 2,
+    "ai_label": {
+      "Others": "57.29800033569336%",
+      "Kyc": "21.437000274658203%",
+      "Exchange": "21.266000747680664%"
     },
     "method": "dfs"
   }

@@ -10,71 +10,56 @@ import inference_ml as ml
 
 NB_LIMIT = 1000
 QUEUE_LIMIT = 10 ** 9
-TIME_LIMIT = 60
+TIME_LIMIT = 180
+DEPTH_LIMIT = 10
+
+method = 'dfs'
 
 #
-def dfs(start_address: str, visited: set, element_list: List,\
-        max_element: int, headers: str, params: dict,\
-        pages: int):
-
-    params['address'] = start_address
-
-    visited.add(start_address)
-
-    dfs_total_trx = get_tronscan_feature.get_trx_from_tronscan(headers, params, pages)
-    total_trx_simplfied = func_1(address=start_address, total_trx=dfs_total_trx)
-
-    for trx in total_trx_simplfied:
-        if trx[0] not in visited:
-
-            if trx[0] == 'TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t':
-                continue
-
-            balance_now = get_time_and_balance(address=trx[0])[1]
-            trx.append(balance_now)
-
-            ai_label = get_ai_label(address=trx[0])
-
-            if type(ai_label) == str or ai_label == None:
-                continue
-
-            if list(ai_label.keys())[0] == 'exchange' or list(ai_label.keys())[0] == 'kyc':
-                buffer = {}
-
-                buffer[trx[0]] = {
-                    'receive_send': trx[1],
-                    'trx_value': trx[2],
-                    'balance': trx[3],
-                    'ai_label': ai_label
-                }
-
-                if trx[0] not in tron_list.keys() and trx[0] not in random_walk_list.keys():
-                    write_json(json_file_path='./random_walk_list.json', data=buffer, address=trx[0])
-
-                print('dfs phase')
-                print(trx)
-                print(ai_label)
-                print('-' * 50)
-
-                element_list.append(trx)
-                visited.add(trx[0])
-            else:
-                continue
-
-            if len(element_list) > max_element:
-                return element_list
-        else:
-            print('{} pass'.format(trx[0]))
-            continue
-
-        if len(element_list) > max_element:
-            return element_list
-
-        dfs(start_address=element_list[-1][0], visited=visited, element_list=element_list,\
-            max_element=max_element, headers=headers, params=params,\
-            pages=pages
-           )
+def dfs(db_name: str, start_address: str, visited: set, element_list: List, 
+        max_element: int, max_depth: int):
+    address = start_address
+    ml_result = ml.main(address=address)
+    first_key = next(iter(ml_result))
+    if first_key == 'exchange' and address not in btc_list.keys() and address not in random_walk_list.keys():
+    # if address not in btc_list.keys() and address not in random_walk_list.keys():
+        in_degree, out_degree = btc.get_degree(db_name=db_name, address=address)
+        write_data = {
+            address: {
+                "in_degree": in_degree,
+                "out_degree": out_degree, 
+                "ai_label": ml_result,
+                "method": "dfs"
+            }
+        }
+        write_json(json_file_path='./random_walk_list_allen.json', data=write_data, address=address)
     
+    # print max depth
+    print(f"max_depth: {max_depth}")
+    if max_depth == 0:
+        return element_list
+
+    neighbors = btc.get_neighbors(db_name=db_name, address=address, limit=NB_LIMIT)
+    count = 0
+    for neighbor in neighbors:
+        if len(element_list) > max_element:
+            break
+        if neighbor not in visited and neighbor not in btc_list.keys() and neighbor not in random_walk_list.keys():
+            element_list.append(neighbor)
+            visited.add(neighbor)
+            count += 1
+
+    while count:
+        print(f"count: {count}")
+        if len(element_list) > max_element:
+            break
+        elif time.time() - start_time > TIME_LIMIT:
+            break
+        address = element_list.pop(-1)
+        dfs(db_name=db_name, start_address=address, visited=visited, element_list=element_list,\
+            max_element=max_element, max_depth=max_depth-1)
+        count -= 1
+
     return element_list
 #
 def bfs(db_name: str, start_address: str, visited: set):
@@ -83,7 +68,8 @@ def bfs(db_name: str, start_address: str, visited: set):
     address = start_address
     ml_result = ml.main(address=address)
     first_key = next(iter(ml_result))
-    if (first_key == "exchange" or first_key == "kyc") and address not in btc_list.keys() and address not in random_walk_list.keys():
+    # if first_key == 'exchange' and address not in btc_list.keys() and address not in random_walk_list.keys():
+    if address not in btc_list.keys() and address not in random_walk_list.keys():
         in_degree, out_degree = btc.get_degree(db_name=db_name, address=address)
         write_data = {
             address: {
@@ -101,90 +87,6 @@ def bfs(db_name: str, start_address: str, visited: set):
             element_list.append(neighbor)
 
     return element_list
-
-    # for trx in total_trx_simplfied:
-    #     if trx[0] not in visited:
-
-    #         if trx[0] == 'TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t':
-    #             continue
-
-    #         balance_now = get_time_and_balance(address=trx[0])[1]
-    #         trx.append(balance_now)
-
-    #         ai_label = get_ai_label(address=trx[0])
-
-    #         if list(ai_label.keys())[0] == 'exchange' or list(ai_label.keys())[0] == 'kyc':
-    #             buffer = {}
-
-    #             buffer[trx[0]] = {
-    #                 'receive_send': trx[1],
-    #                 'trx_value': trx[2],
-    #                 'balance': trx[3],
-    #                 'ai_label': ai_label
-    #             }
-
-    #             if trx[0] not in tron_list.keys() and trx[0] not in random_walk_list.keys():
-    #                 write_json(json_file_path='./random_walk_list.json', data=buffer, address=trx[0])
-
-    #             print('bfs phase')
-    #             print(trx)
-    #             print(ai_label)
-    #             print('-' * 50)
-
-    #             trx.append(balance_now)
-    #             element_list.append(trx)
-    #             visited.add(trx[0])
-    #         else:
-    #             continue
-    #     else:
-    #         print('{} pass'.format(trx[0]))
-    #         continue
-
-    # return element_list
-#
-def sort_trx(total_trx_simplfied):
-    buffer = []
-
-    for address in total_trx_simplfied.keys():
-        temp = [
-            address,\
-            total_trx_simplfied[address]['receive_send'],\
-            total_trx_simplfied[address]['value'],\
-        ]
-
-        buffer.append(temp)
-    
-    buffer_sorted = sorted(buffer, key=lambda x: x[2], reverse=True)
-
-    return buffer_sorted
-#
-def get_time_and_balance(address):
-    url_data = [
-        'https://tron-rpc.publicnode.com/wallet/getaccount',
-        'http://192.168.200.59:8090/wallet/getaccount',
-        'http://192.168.200.145:8090/wallet/getaccount',
-    ]
-    headers = {
-        'Accept': 'application/json',
-        'Content-Type': 'application/json'
-    }
-    data = {
-        'address': address,
-        'visible': True
-    }
-
-    for url in url_data:
-        response = requests.post(url, headers=headers, data=json.dumps(data))
-
-        if response.status_code == 200:
-           result = response.json()
-           wallet_address_create_time = result.get('create_time', 0)
-           wallet_address_balance_now = result.get('balance', 0)/(10 ** 6) * 0.12
-
-           return wallet_address_create_time, wallet_address_balance_now
-        else:
-            print('Request failed with status code', response.status_code)
-            print(response.text)
 #
 def readJson(path: str):
     with open(path, 'r', encoding='utf-8-sig') as json_file:
@@ -219,81 +121,11 @@ def write_json(json_file_path, data, address):
 
     print('數據已寫入json')
 #
-def get_ai_label(address):
-    url = f'http://localhost:8888/func_1?address={address}'
-    response = requests.get(url)
-    
-    return response.json()
-#
-def func_1(address, total_trx):
-    '''
-    {
-        address:{
-            from_to: ...,
-            value: ...,
-        }
-    }
-    '''
-    usdt_flag = False
-    buffer = {}
-
-    for i, trx in enumerate(total_trx):
-        if trx['toAddressList'] == []:
-            continue
-        if i == len(total_trx) - 1:
-            first_trx = trx['timestamp'] / (10 ** 3)
-        if i == 0:
-            last_trx = trx['timestamp'] / (10 ** 3)
-
-        if trx['ownerAddress'] == 'TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t' or trx['toAddress'] == 'TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t': #usdt
-            usdt_flag = True
-            try:
-                trx_value = int(trx['trigger_info']['parameter']['_value']) / (10 ** 6)
-            except:
-                try:
-                    trx_value = int(trx['trigger_info']['data'][-64:], 16) / (10 ** 6)
-                except:
-                    trx_value = int(trx['amount']) / (10 ** 7)
-        else: #trx
-            usdt_flag = False
-            trx_value = int(trx['amount']) / (10 ** 7)
-
-        if trx_value > 1.1e+20:
-            continue
-
-        if usdt_flag:
-            try:
-                if address == trx['trigger_info']['parameter']['_to']: #receive, -
-                    other_side_address = trx['trigger_info']['parameter']['_to']
-                    from_to = 'send_side'
-                else: #send, +
-                    other_side_address = trx['trigger_info']['parameter']['_from']
-                    from_to = 'recceive_side'
-            except:
-                if address == trx['ownerAddress']: #send, +
-                    other_side_address = trx['toAddress']
-                    from_to = 'recceive_side'
-                else: #receive, -
-                    other_side_address = trx['ownerAddress']
-                    from_to = 'send_side'
-        else:
-            if address == trx['ownerAddress']: #send, +
-                other_side_address = trx['toAddress']
-                from_to = 'recceive_side'
-            else: #receive, -
-                other_side_address = trx['ownerAddress']
-                from_to = 'send_side'
-
-        buffer[other_side_address] = {'receive_send': from_to, 'value': trx_value}
-
-    buffer_sorted = sort_trx(buffer)
-
-    return buffer_sorted
-#
 def main():
     global btc_list
     global visited
     global random_walk_list
+    global start_time
 
     btc_list = readJson('./label_database/btc.json')
     random_walk_list = {}
@@ -326,26 +158,26 @@ def main():
         address = queue.pop(0)
         print(f"Processing address: {address}")
 
-        # dfs_list = dfs(start_address=address, visited=visited, element_list=[],\
-        #             max_element=2, headers=headers, params=params,\
-        #             pages=pages,
-        #             )
+        dfs_list = []
+        if method == 'dfs':
+            dfs_list = dfs(db_name=db_name, start_address=address, visited=visited, element_list=[], 
+                        max_element=QUEUE_LIMIT // 2, max_depth=DEPTH_LIMIT)
 
-        # print('dfs phase done')
+            queue.extend(dfs_list)
 
-        dfs_list = [address]
+            print('dfs phase done')
+        elif method == 'bfs':
+            dfs_list = [address]
+            for address in dfs_list:
+                bfs_list = bfs(db_name=db_name, start_address=address, visited=visited)
+                
+                for _ in bfs_list:
+                    if len(queue) >= QUEUE_LIMIT:
+                        break
+                    queue.append(_)
+                    visited.add(_)
 
-        for address in dfs_list:
-            bfs_list = bfs(db_name = db_name, start_address=address, visited=visited)
-            
-            for _ in bfs_list:
-                if len(queue) >= QUEUE_LIMIT:
-                    break
-                # print(f"Adding address: {_}")
-                queue.append(_)
-                visited.add(_)
-
-        print('bfs phase done')
+            print('bfs phase done')
 
         if time.time() - start_time > TIME_LIMIT:
             break
