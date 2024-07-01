@@ -81,15 +81,9 @@ Jace, Allen
 
 # Reference
 1. Neo4j 數據庫地址
-   - 帳號：reader
-   - 密碼：P@ssw0rd
-
    - BTC: [http://192.168.200.83:7474/](http://192.168.200.83:7474/) (bitcoin, bitcoin2, bitcoin3, bitcoin4, bitcoin5, bitcoin6, bitcoinv)
    - ETH: [http://192.168.200.73:7474/](http://192.168.200.73:7474/) (ethereum)
    - TRON: [http://192.168.200.196:7474](http://192.168.200.196:7474) (tron)
-
-   * 對 Neo4j 有疑問可以問 Dustin。
-   * 算法可以找 Ray 討論一下。
 
 2. BTC 獲取 address 交易並取出真正交易值的 query
     ```cypher
