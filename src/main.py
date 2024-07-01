@@ -321,5 +321,6 @@ def main(address):
             print('bfs phase done')
 #
 if __name__ == '__main__':
-    main(address='TXFBqBbqJommqZf7BV8NNYzePh97UmJodJ')
+    #main(address='TXFBqBbqJommqZf7BV8NNYzePh97UmJodJ')
+    print('damn')
 #
