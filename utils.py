@@ -2,6 +2,7 @@ import json
 import os
 import numpy as np
 import requests
+import time
 #
 def readJson(path: str):
     with open(path, 'r', encoding='utf-8-sig') as json_file:
@@ -25,7 +26,44 @@ def get_misttrack_label(coin: str, address: str) -> None:
 
     return response
 #
-if __name__ == '__main__':
-    response = get_misttrack_label(coin='BTC', address='3JEk9g87E9CEnxNWk1foxyVW27YEAmqaWQ')
-    print(response)
+def get_oklink_label(chain_name: str, address: str):
+    url = f"https://www.oklink.com/api/v5/explorer/address/entity-label?chainShortName={chain_name}&address={address}"
+
+    payload = ""
+    headers = {
+    'Ok-Access-Key': 'eedb6f15-f0d3-47e6-a990-6647ef636bb7'
+    }
+
+    response = requests.request("GET", url, headers=headers, data=payload).json()
+
+    return response
 #
+def func_1():
+    data_list = readJson(path='./label_database/tron.json')
+    counter = 0
+    total_counter = 0
+
+    for address in data_list.keys():
+        if data_list[address]['misttrack_label_type'] == 'defi':
+            response = get_oklink_label(chain_name='tron', address=address)
+
+            if len(response['data']) > 0:
+                counter += 1
+
+            total_counter += 1
+            time.sleep(1)
+
+            print(data_list[address])
+            print('\n')
+            print(response)
+            print(f'counter: {counter}/{total_counter}')
+            print('-' * 50)
+#
+if __name__ == '__main__':
+    #response = get_misttrack_label(coin='BTC', address='3Ai97uJfrC8kLUdgydLPfKFwFmAE5s9b7t')
+    #print(response)
+    func_1()
+#
+'''
+labeld: 413/2656
+'''

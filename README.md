@@ -22,6 +22,62 @@
 
 3. 目前基於 Neo4j 數據訓練好的機器學習模型只有 BTC，可先從此鏈開始研究，可參考 Ref 2.。
 
+# Discussion
+## 2024.06.26
+### Participants
+Jace, Allen
+### Contents
+1. 對BFS、DFS、Random Walk(BFS + DFS)做評測
+2. 評測依據：AI模型預測出現'Exchange'佔的比例
+3. 將 Queue 內容輸出成檔案儲存
+
+# Data Format
+
+1. **Misttrack API Labels**: If labels are obtained through the Misttrack API, add the fields `misttrack_label_list` and `misttrack_label_type`.
+2. **AI Model Labels**: If no labels are obtained through Misttrack, use AI model judgment and write the results into the `bcs_label` field.
+
+```json
+{
+  "bc1qajn9nr0f90zd2z20kgdwyy34e247g0v6alvpz6": {
+    "degree": {
+      "in_degree": 182,
+      "out_degree": 147
+    },
+    "ai_label": {
+      "Kyc": "50.47800064086914%",
+      "Others": "26.714000701904297%",
+      "Exchange": "22.808000564575195%"
+    },
+    "misttrack_label_list": [
+      "binance",
+      "deposit"
+    ],
+    "misttrack_label_type": "exchange",
+    "bcs_label": "Exchange"
+  },
+  "1PFtVxKG3o8Devy6JVExKxFre6UMwDfpTM": {
+    "degree": {
+      "in_degree": 57,
+      "out_degree": 55
+    },
+    "ai_label": {
+      "Kyc": "57.176998138427734%",
+      "Others": "21.525999069213867%",
+      "Exchange": "21.297000885009766%"
+    },
+    "bcs_label": "Kyc"
+  }
+  // and so on...
+}
+
+### 說明
+
+- **degree**: 包含 `in_degree` 和 `out_degree`。
+- **ai_label**: 使用 AI 模型進行標籤判斷，並提供各類標籤的百分比。
+- **misttrack_label_list**: 來自 Misttrack API 的標籤列表。
+- **misttrack_label_type**: 來自 Misttrack API 的標籤類型。
+- **bcs_label**: 如果無法從 Misttrack 獲取標籤，則使用 AI 模型的判斷結果。
+
 # Reference
 1. Neo4j 數據庫地址
    - 帳號：reader
