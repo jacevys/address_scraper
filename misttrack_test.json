@@ -1,0 +1,1035 @@
+{
+  "bc1qwqdg6squsna38e46795at95yu9atm8azzmyvckulcc7kytlcckxswvvzej": {
+    "in_degree": 339859,
+    "out_degree": 340761,
+    "ai_label": {
+      "exchange": "90%",
+      "others": "5%",
+      "kyc": "5%",
+      "scam": "0%"
+    },
+    "mistrack_result": {
+      "label_list": [
+        "Bitflyer",
+        "hot"
+      ],
+      "label_type": "defi"
+    }
+  },
+  "1Kr6QSydW9bFQG1mXiPNNu6WpJGmUa9i1g": {
+    "in_degree": 148985,
+    "out_degree": 148998,
+    "ai_label": {
+      "exchange": "90%",
+      "others": "5%",
+      "kyc": "5%",
+      "scam": "0%"
+    },
+    "mistrack_result": {
+      "label_list": [
+        "bitfinex",
+        "deposit"
+      ],
+      "label_type": "exchange"
+    }
+  },
+  "bc1q7cyrfmck2ffu2ud3rn5l5a8yv6f0chkp0zpemf": {
+    "in_degree": 878748,
+    "out_degree": 891024,
+    "ai_label": {
+      "exchange": "90%",
+      "others": "5%",
+      "kyc": "5%",
+      "scam": "0%"
+    },
+    "mistrack_result": {
+      "label_list": [
+        "Crypto.com",
+        "hot"
+      ],
+      "label_type": "exchange"
+    }
+  },
+  "19iqYbeATe4RxghQZJnYVFU4mjUUu76EA6": {
+    "in_degree": 78017,
+    "out_degree": 77982,
+    "ai_label": {
+      "exchange": "90%",
+      "others": "5%",
+      "kyc": "5%",
+      "scam": "0%"
+    },
+    "mistrack_result": {
+      "label_list": [
+        "renBTC",
+        "hot"
+      ],
+      "label_type": "defi"
+    }
+  },
+  "bc1qyzxdu4px4jy8gwhcj82zpv7qzhvc0fvumgnh0r": {
+    "in_degree": 176740,
+    "out_degree": 176711,
+    "ai_label": {
+      "exchange": "90%",
+      "others": "5%",
+      "kyc": "5%",
+      "scam": "0%"
+    },
+    "mistrack_result": {
+      "label_list": [],
+      "label_type": ""
+    }
+  },
+  "1BwGUtHirPQ4dKusbCTcxMbxBTu24yRkHa": {
+    "in_degree": 70892,
+    "out_degree": 70942,
+    "ai_label": {
+      "exchange": "90%",
+      "others": "5%",
+      "kyc": "5%",
+      "scam": "0%"
+    },
+    "mistrack_result": {
+      "label_list": [
+        "Unknown Exchange"
+      ],
+      "label_type": "exchange"
+    }
+  },
+  "3L1p2tUHPwrRN3qgf4Hm1R73e29hFshbnp": {
+    "in_degree": 164644,
+    "out_degree": 164550,
+    "ai_label": {
+      "exchange": "90%",
+      "others": "5%",
+      "kyc": "5%",
+      "scam": "0%"
+    },
+    "mistrack_result": {
+      "label_list": [
+        "blockchain.com",
+        "hot"
+      ],
+      "label_type": "defi"
+    }
+  },
+  "3M92sq9ssFaNbEwF47uteVKJsbw125juS7": {
+    "in_degree": 160931,
+    "out_degree": 161128,
+    "ai_label": {
+      "exchange": "90%",
+      "others": "5%",
+      "kyc": "5%",
+      "scam": "0%"
+    },
+    "mistrack_result": {
+      "label_list": [
+        "bithumb",
+        "hot"
+      ],
+      "label_type": "exchange"
+    }
+  },
+  "1zgmvYi5x1wy3hUh7AjKgpcVgpA8Lj9FA": {
+    "in_degree": 66533,
+    "out_degree": 66621,
+    "ai_label": {
+      "exchange": "90%",
+      "others": "5%",
+      "kyc": "5%",
+      "scam": "0%"
+    },
+    "mistrack_result": {
+      "label_list": [
+        "Poolin",
+        "deposit"
+      ],
+      "label_type": "defi"
+    }
+  },
+  "bc1qq904ynep5mvwpjxdlyecgeupg22dm8am6cfvgq": {
+    "in_degree": 241555,
+    "out_degree": 241537,
+    "ai_label": {
+      "exchange": "90%",
+      "others": "5%",
+      "kyc": "5%",
+      "scam": "0%"
+    },
+    "mistrack_result": {
+      "label_list": [
+        "changenow"
+      ],
+      "label_type": "mixer"
+    }
+  },
+  "bc1qnsupj8eqya02nm8v6tmk93zslu2e2z8chlmcej": {
+    "in_degree": 415108,
+    "out_degree": 418622,
+    "ai_label": {
+      "exchange": "90%",
+      "others": "5%",
+      "kyc": "5%",
+      "scam": "0%"
+    },
+    "mistrack_result": {
+      "label_list": [
+        "Coincheck",
+        "hot"
+      ],
+      "label_type": "defi"
+    }
+  },
+  "1FoWyxwPXuj4C6abqwhjDWdz6D4PZgYRjA": {
+    "in_degree": 116195,
+    "out_degree": 82928,
+    "ai_label": {
+      "exchange": "90%",
+      "others": "5%",
+      "kyc": "5%",
+      "scam": "0%"
+    },
+    "mistrack_result": {
+      "label_list": [
+        "binance"
+      ],
+      "label_type": "exchange"
+    }
+  },
+  "1NDyJtNTjmwk5xPNhjgAMu4HDHigtobu1s": {
+    "in_degree": 356799,
+    "out_degree": 331939,
+    "ai_label": {
+      "exchange": "90%",
+      "others": "5%",
+      "kyc": "5%",
+      "scam": "0%"
+    },
+    "mistrack_result": {
+      "label_list": [
+        "Binance",
+        "hot"
+      ],
+      "label_type": "exchange"
+    }
+  },
+  "1HckjUpRGcrrRAtFaaCAUaGjsPx9oYmLaZ": {
+    "in_degree": 512262,
+    "out_degree": 339101,
+    "ai_label": {
+      "exchange": "90%",
+      "others": "5%",
+      "kyc": "5%",
+      "scam": "0%"
+    },
+    "mistrack_result": {
+      "label_list": [
+        "Huobi",
+        "hot"
+      ],
+      "label_type": "exchange"
+    }
+  },
+  "bc1qx65xcxz6dfsge2g4eaerercslh83y66wrpm79r": {
+    "in_degree": 162419,
+    "out_degree": 158820,
+    "ai_label": {
+      "exchange": "90%",
+      "others": "5%",
+      "kyc": "5%",
+      "scam": "0%"
+    },
+    "mistrack_result": {
+      "label_list": [
+        "KuCoin",
+        "hot"
+      ],
+      "label_type": "exchange"
+    }
+  },
+  "3DGxAYYUA61WrrdbBac8Ra9eA9peAQwTJF": {
+    "in_degree": 80497,
+    "out_degree": 80301,
+    "ai_label": {
+      "exchange": "90%",
+      "others": "5%",
+      "kyc": "5%",
+      "scam": "0%"
+    },
+    "mistrack_result": {
+      "label_list": [],
+      "label_type": ""
+    }
+  },
+  "bc1q7tg65q7pf0e6h7sz82rgltjr6wzvfa3eaac3ta": {
+    "in_degree": 51936,
+    "out_degree": 51925,
+    "ai_label": {
+      "exchange": "90%",
+      "others": "5%",
+      "kyc": "5%",
+      "scam": "0%"
+    },
+    "mistrack_result": {
+      "label_list": [
+        "Unknown Exchange"
+      ],
+      "label_type": "exchange"
+    }
+  },
+  "3Fa6gDdmGLThLGRtJVg6CVMkoEp26gC2Dk": {
+    "in_degree": 53306,
+    "out_degree": 53304,
+    "ai_label": {
+      "exchange": "90%",
+      "others": "5%",
+      "kyc": "5%",
+      "scam": "0%"
+    },
+    "mistrack_result": {
+      "label_list": [],
+      "label_type": ""
+    }
+  },
+  "3EEJFjZURxShNr2AoJtbfcvCB749yzP7LP": {
+    "in_degree": 74257,
+    "out_degree": 74254,
+    "ai_label": {
+      "exchange": "90%",
+      "others": "5%",
+      "kyc": "5%",
+      "scam": "0%"
+    },
+    "mistrack_result": {
+      "label_list": [
+        "Unknown Exchange"
+      ],
+      "label_type": "exchange"
+    }
+  },
+  "18uhzy546Qz7CxRNkHohg4W9VSkfTkbSvY": {
+    "in_degree": 58239,
+    "out_degree": 58555,
+    "ai_label": {
+      "exchange": "90%",
+      "others": "5%",
+      "kyc": "5%",
+      "scam": "0%"
+    },
+    "mistrack_result": {
+      "label_list": [
+        "Unknown Exchange"
+      ],
+      "label_type": "exchange"
+    }
+  },
+  "39H1bAjRinsavmKURJaXkhJk3ngovhTfv5": {
+    "in_degree": 138838,
+    "out_degree": 134535,
+    "ai_label": {
+      "exchange": "90%",
+      "others": "5%",
+      "kyc": "5%",
+      "scam": "0%"
+    },
+    "mistrack_result": {
+      "label_list": [],
+      "label_type": ""
+    }
+  },
+  "3PUv9tQMSDCEPSMsYSopA5wDW86pwRFbNF": {
+    "in_degree": 127215,
+    "out_degree": 125769,
+    "ai_label": {
+      "exchange": "90%",
+      "others": "5%",
+      "kyc": "5%",
+      "scam": "0%"
+    },
+    "mistrack_result": {
+      "label_list": [
+        "Unknown Exchange"
+      ],
+      "label_type": "exchange"
+    }
+  },
+  "bc1quq29mutxkgxmjfdr7ayj3zd9ad0ld5mrhh89l2": {
+    "in_degree": 350742,
+    "out_degree": 352929,
+    "ai_label": {
+      "exchange": "90%",
+      "others": "5%",
+      "kyc": "5%",
+      "scam": "0%"
+    },
+    "mistrack_result": {
+      "label_list": [
+        "Gemini",
+        "hot"
+      ],
+      "label_type": "exchange"
+    }
+  },
+  "1HtuUatKrJSR8PYs2qSxnxvPuYhf8UiCpB": {
+    "in_degree": 56498,
+    "out_degree": 45683,
+    "ai_label": {
+      "exchange": "90%",
+      "others": "5%",
+      "kyc": "5%",
+      "scam": "0%"
+    },
+    "mistrack_result": {
+      "label_list": [
+        "binance"
+      ],
+      "label_type": "exchange"
+    }
+  },
+  "39dk7jM6HzQ8aYr8CwC4XSTNke8kXDJaQY": {
+    "in_degree": 107621,
+    "out_degree": 107609,
+    "ai_label": {
+      "exchange": "90%",
+      "others": "5%",
+      "kyc": "5%",
+      "scam": "0%"
+    },
+    "mistrack_result": {
+      "label_list": [
+        "bitpanda.com",
+        "deposit"
+      ],
+      "label_type": "defi"
+    }
+  },
+  "35TviLjv9zD91Q9N7X3kcqstZdBusTpqNe": {
+    "in_degree": 55020,
+    "out_degree": 55068,
+    "ai_label": {
+      "exchange": "90%",
+      "others": "5%",
+      "kyc": "5%",
+      "scam": "0%"
+    },
+    "mistrack_result": {
+      "label_list": [
+        "Unknown Exchange"
+      ],
+      "label_type": "exchange"
+    }
+  },
+  "bc1q79xquvw37zgxn6yycj9c0ap4jjzygfapjwv8dn": {
+    "in_degree": 89650,
+    "out_degree": 91548,
+    "ai_label": {
+      "exchange": "90%",
+      "others": "5%",
+      "kyc": "5%",
+      "scam": "0%"
+    },
+    "mistrack_result": {
+      "label_list": [
+        "Unknown Exchange"
+      ],
+      "label_type": "exchange"
+    }
+  },
+  "36TZYLiYfpW4AU2vrvwNxTEUWez1YB9WHD": {
+    "in_degree": 71237,
+    "out_degree": 71099,
+    "ai_label": {
+      "exchange": "90%",
+      "others": "5%",
+      "kyc": "5%",
+      "scam": "0%"
+    },
+    "mistrack_result": {
+      "label_list": [
+        "Unknown Exchange"
+      ],
+      "label_type": "exchange"
+    }
+  },
+  "3DmYZYkxgS5M1KvPTCXrDQbEe9NZhqmH7e": {
+    "in_degree": 73529,
+    "out_degree": 73443,
+    "ai_label": {
+      "exchange": "90%",
+      "others": "5%",
+      "kyc": "5%",
+      "scam": "0%"
+    },
+    "mistrack_result": {
+      "label_list": [
+        "Unknown Exchange"
+      ],
+      "label_type": "exchange"
+    }
+  },
+  "31n7Q4JQLL8xHmsna2yy1AS3JPe3KKpkTd": {
+    "in_degree": 279484,
+    "out_degree": 279322,
+    "ai_label": {
+      "exchange": "90%",
+      "others": "5%",
+      "kyc": "5%",
+      "scam": "0%"
+    },
+    "mistrack_result": {
+      "label_list": [
+        "Unknown Exchange"
+      ],
+      "label_type": "exchange"
+    }
+  },
+  "bc1q0qfzuge7vr5s2xkczrjkccmxemlyyn8mhx298v": {
+    "in_degree": 119730,
+    "out_degree": 87265,
+    "ai_label": {
+      "exchange": "90%",
+      "others": "5%",
+      "kyc": "5%",
+      "scam": "0%"
+    },
+    "mistrack_result": {
+      "label_list": [
+        "cobo_custody",
+        "deposit"
+      ],
+      "label_type": "exchange"
+    }
+  },
+  "3JodN7GmkHdPgKj9G7HCkn9NDLhrcWCjVN": {
+    "in_degree": 232043,
+    "out_degree": 229721,
+    "ai_label": {
+      "exchange": "90%",
+      "others": "5%",
+      "kyc": "5%",
+      "scam": "0%"
+    },
+    "mistrack_result": {
+      "label_list": [
+        "CoinsPaid",
+        "deposit"
+      ],
+      "label_type": "defi"
+    }
+  },
+  "3QKCocNhzAgtgFLsD5qUZcG6e4TkfRf421": {
+    "in_degree": 152154,
+    "out_degree": 152409,
+    "ai_label": {
+      "exchange": "90%",
+      "others": "5%",
+      "kyc": "5%",
+      "scam": "0%"
+    },
+    "mistrack_result": {
+      "label_list": [
+        "Alphapo.net",
+        "deposit"
+      ],
+      "label_type": "exchange"
+    }
+  },
+  "357d4rAjQhDPaWhZrBAFY7aizVPkNSq2DH": {
+    "in_degree": 173209,
+    "out_degree": 161216,
+    "ai_label": {
+      "exchange": "90%",
+      "others": "5%",
+      "kyc": "5%",
+      "scam": "0%"
+    },
+    "mistrack_result": {
+      "label_list": [],
+      "label_type": ""
+    }
+  },
+  "1NkoNfJQyQhLZW6FUpMW2mJaJ8C9CrLTnW": {
+    "in_degree": 78321,
+    "out_degree": 127161,
+    "ai_label": {
+      "exchange": "90%",
+      "others": "5%",
+      "kyc": "5%",
+      "scam": "0%"
+    },
+    "mistrack_result": {
+      "label_list": [],
+      "label_type": ""
+    }
+  },
+  "367f4YWz1VCFaqBqwbTrzwi2b1h2U3w1AF": {
+    "in_degree": 43810,
+    "out_degree": 81114,
+    "ai_label": {
+      "exchange": "90%",
+      "others": "5%",
+      "kyc": "5%",
+      "scam": "0%"
+    },
+    "mistrack_result": {
+      "label_list": [
+        "poloniex"
+      ],
+      "label_type": "exchange"
+    }
+  },
+  "17A16QmavnUfCW11DAApiJxp7ARnxN5pGX": {
+    "in_degree": 80413,
+    "out_degree": 80404,
+    "ai_label": {
+      "exchange": "90%",
+      "others": "5%",
+      "kyc": "5%",
+      "scam": "0%"
+    },
+    "mistrack_result": {
+      "label_list": [
+        "poloniex",
+        "hot"
+      ],
+      "label_type": "exchange"
+    }
+  },
+  "37biYvTEcBVMoR1NGkPTGvHUuLTrzcLpiv": {
+    "in_degree": 202105,
+    "out_degree": 210545,
+    "ai_label": {
+      "exchange": "90%",
+      "others": "5%",
+      "kyc": "5%",
+      "scam": "0%"
+    },
+    "mistrack_result": {
+      "label_list": [
+        "coinbase"
+      ],
+      "label_type": "exchange"
+    }
+  },
+  "bc1qyemk24czaa6a2nr89nrz775ewvptxg7yfe750u": {
+    "in_degree": 139326,
+    "out_degree": 139341,
+    "ai_label": {
+      "exchange": "90%",
+      "others": "5%",
+      "kyc": "5%",
+      "scam": "0%"
+    },
+    "mistrack_result": {
+      "label_list": [],
+      "label_type": ""
+    }
+  },
+  "1PG8oNDxvxRodVEn2WjARNqSFussPmytvu": {
+    "in_degree": 73431,
+    "out_degree": 73219,
+    "ai_label": {
+      "exchange": "90%",
+      "others": "5%",
+      "kyc": "5%",
+      "scam": "0%"
+    },
+    "mistrack_result": {
+      "label_list": [
+        "Binance",
+        "deposit"
+      ],
+      "label_type": "exchange"
+    }
+  },
+  "1N52wHoVR79PMDishab2XmRHsbekCdGquK": {
+    "in_degree": 125172,
+    "out_degree": 125218,
+    "ai_label": {
+      "exchange": "90%",
+      "others": "5%",
+      "kyc": "5%",
+      "scam": "0%"
+    },
+    "mistrack_result": {
+      "label_list": [
+        "bittrex",
+        "deposit"
+      ],
+      "label_type": "exchange"
+    }
+  },
+  "16Cpk9Dw1t58NYLZh8EQp9u9HkQgD7Kk3y": {
+    "in_degree": 68069,
+    "out_degree": 68226,
+    "ai_label": {
+      "exchange": "90%",
+      "others": "5%",
+      "kyc": "5%",
+      "scam": "0%"
+    },
+    "mistrack_result": {
+      "label_list": [
+        "coinbase"
+      ],
+      "label_type": "exchange"
+    }
+  },
+  "3D1tr3hpj3wsxKNTTvDwFQLX8HLKvqfLRU": {
+    "in_degree": 103516,
+    "out_degree": 103480,
+    "ai_label": {
+      "exchange": "90%",
+      "others": "5%",
+      "kyc": "5%",
+      "scam": "0%"
+    },
+    "mistrack_result": {
+      "label_list": [
+        "changehero.io",
+        "deposit"
+      ],
+      "label_type": "mixer"
+    }
+  },
+  "1GQdrgqAbkeEPUef1UpiTc4X1mUHMcyuGW": {
+    "in_degree": 369361,
+    "out_degree": 369359,
+    "ai_label": {
+      "exchange": "90%",
+      "others": "5%",
+      "kyc": "5%",
+      "scam": "0%"
+    },
+    "mistrack_result": {
+      "label_list": [
+        "coinspot.com.au",
+        "hot"
+      ],
+      "label_type": "defi"
+    }
+  },
+  "1BrasiLb2KMbdtuhb1chAVnS2FvcNGfV9J": {
+    "in_degree": 225299,
+    "out_degree": 218016,
+    "ai_label": {
+      "exchange": "90%",
+      "others": "5%",
+      "kyc": "5%",
+      "scam": "0%"
+    },
+    "mistrack_result": {
+      "label_list": [
+        "Unknown Exchange"
+      ],
+      "label_type": "exchange"
+    }
+  },
+  "1G47mSr3oANXMafVrR8UC4pzV7FEAzo3r9": {
+    "in_degree": 150559,
+    "out_degree": 140082,
+    "ai_label": {
+      "exchange": "90%",
+      "others": "5%",
+      "kyc": "5%",
+      "scam": "0%"
+    },
+    "mistrack_result": {
+      "label_list": [
+        "gate.io",
+        "hot"
+      ],
+      "label_type": "exchange"
+    }
+  },
+  "3QkGnvRt7Crxg4kdR5riDEM9pMTibwfBQD": {
+    "in_degree": 142560,
+    "out_degree": 45302,
+    "ai_label": {
+      "exchange": "90%",
+      "others": "5%",
+      "kyc": "5%",
+      "scam": "0%"
+    },
+    "mistrack_result": {
+      "label_list": [
+        "Coinbase",
+        "deposit"
+      ],
+      "label_type": "exchange"
+    }
+  },
+  "3JgfqZmwGFseH7hpkmrejyoryUkXaXriyE": {
+    "in_degree": 180115,
+    "out_degree": 180126,
+    "ai_label": {
+      "exchange": "90%",
+      "others": "5%",
+      "kyc": "5%",
+      "scam": "0%"
+    },
+    "mistrack_result": {
+      "label_list": [],
+      "label_type": ""
+    }
+  },
+  "35dTYsydBawAo5L2gKMAkCJDjRAQWvCVHY": {
+    "in_degree": 60573,
+    "out_degree": 60284,
+    "ai_label": {
+      "exchange": "90%",
+      "others": "5%",
+      "kyc": "5%",
+      "scam": "0%"
+    },
+    "mistrack_result": {
+      "label_list": [
+        "bitmart",
+        "deposit"
+      ],
+      "label_type": "exchange"
+    }
+  },
+  "1A5PFH8NdhLy1raKXKxFoqUgMAPUaqivqp": {
+    "in_degree": 60154,
+    "out_degree": 60153,
+    "ai_label": {
+      "exchange": "90%",
+      "others": "5%",
+      "kyc": "5%",
+      "scam": "0%"
+    },
+    "mistrack_result": {
+      "label_list": [],
+      "label_type": ""
+    }
+  },
+  "3NSa5aSknNkZzw4M8iiXRcW1sjid8quXdt": {
+    "in_degree": 78136,
+    "out_degree": 78159,
+    "ai_label": {
+      "exchange": "90%",
+      "others": "5%",
+      "kyc": "5%",
+      "scam": "0%"
+    },
+    "mistrack_result": {
+      "label_list": [
+        "blockchain.com",
+        "deposit"
+      ],
+      "label_type": "defi"
+    }
+  },
+  "18xHTRqn7RDoYF58NXQNZtLDTBscc9o8Ge": {
+    "in_degree": 199028,
+    "out_degree": 197999,
+    "ai_label": {
+      "exchange": "90%",
+      "others": "5%",
+      "kyc": "5%",
+      "scam": "0%"
+    },
+    "mistrack_result": {
+      "label_list": [],
+      "label_type": ""
+    }
+  },
+  "bc1qaw7e304esayf9ph9j5hn8uz6nwecudy6kvp2wu": {
+    "in_degree": 155629,
+    "out_degree": 155647,
+    "ai_label": {
+      "exchange": "90%",
+      "others": "5%",
+      "kyc": "5%",
+      "scam": "0%"
+    },
+    "mistrack_result": {
+      "label_list": [],
+      "label_type": ""
+    }
+  },
+  "1HDWAto9mD4vwZkxE7RZ4nxvgYcA5vJQpG": {
+    "in_degree": 460016,
+    "out_degree": 456965,
+    "ai_label": {
+      "exchange": "90%",
+      "others": "5%",
+      "kyc": "5%",
+      "scam": "0%"
+    },
+    "mistrack_result": {
+      "label_list": [
+        "Binance",
+        "deposit"
+      ],
+      "label_type": "exchange"
+    }
+  },
+  "bc1qvq0ee84zc2emevetsl3mx9xl9ynjpelhxjjesq": {
+    "in_degree": 89039,
+    "out_degree": 89040,
+    "ai_label": {
+      "exchange": "90%",
+      "others": "5%",
+      "kyc": "5%",
+      "scam": "0%"
+    },
+    "mistrack_result": {
+      "label_list": [],
+      "label_type": ""
+    }
+  },
+  "12qA97T8hsDgvVoRCXGZifd9PCraqvd2DW": {
+    "in_degree": 188868,
+    "out_degree": 103532,
+    "ai_label": {
+      "exchange": "90%",
+      "others": "5%",
+      "kyc": "5%",
+      "scam": "0%"
+    },
+    "mistrack_result": {
+      "label_list": [],
+      "label_type": ""
+    }
+  },
+  "1111111111111111111114oLvT2": {
+    "in_degree": 116084,
+    "out_degree": 0,
+    "ai_label": {
+      "exchange": "90%",
+      "others": "5%",
+      "kyc": "5%",
+      "scam": "0%"
+    },
+    "mistrack_result": {
+      "label_list": [],
+      "label_type": ""
+    }
+  },
+  "bc1qlhukrgz3y8zesfedxg7xx36ta2mmh50pgacrn749dfs4mfxcs2cq7qaemy": {
+    "in_degree": 86007,
+    "out_degree": 86038,
+    "ai_label": {
+      "exchange": "90%",
+      "others": "5%",
+      "kyc": "5%",
+      "scam": "0%"
+    },
+    "mistrack_result": {
+      "label_list": [],
+      "label_type": ""
+    }
+  },
+  "bc1q0wu0tqp2u3rtunjl0h0rsl9pvf86acy6sep63st0lp7lgg67ykzqeq89pn": {
+    "in_degree": 51200,
+    "out_degree": 51163,
+    "ai_label": {
+      "exchange": "90%",
+      "others": "5%",
+      "kyc": "5%",
+      "scam": "0%"
+    },
+    "mistrack_result": {
+      "label_list": [],
+      "label_type": ""
+    }
+  },
+  "bc1qns9f7yfx3ry9lj6yz7c9er0vwa0ye2eklpzqfw": {
+    "in_degree": 208895,
+    "out_degree": 208876,
+    "ai_label": {
+      "exchange": "90%",
+      "others": "5%",
+      "kyc": "5%",
+      "scam": "0%"
+    },
+    "mistrack_result": {
+      "label_list": [
+        "FixedFloat"
+      ],
+      "label_type": "mixer"
+    }
+  },
+  "15FnEkUVAngt7RSdbFmosrnd7E7VCW3P4Q": {
+    "in_degree": 55808,
+    "out_degree": 52413,
+    "ai_label": {
+      "exchange": "90%",
+      "others": "5%",
+      "kyc": "5%",
+      "scam": "0%"
+    },
+    "mistrack_result": {
+      "label_list": [
+        "Binance",
+        "deposit"
+      ],
+      "label_type": "exchange"
+    }
+  },
+  "bc1qwfgdjyy95aay2686fn74h6a4nu9eev6np7q4fn204dkj3274frlqrskvx0": {
+    "in_degree": 1319224,
+    "out_degree": 1315486,
+    "ai_label": {
+      "exchange": "90%",
+      "others": "5%",
+      "kyc": "5%",
+      "scam": "0%"
+    },
+    "mistrack_result": {
+      "label_list": [
+        "LUNO",
+        "hot"
+      ],
+      "label_type": "exchange"
+    }
+  },
+  "bc1qel7tps3wu6zqztaanczvt76hffwh7k06jd8r9xh2v3ztpa5ty5dsz358ys": {
+    "in_degree": 288766,
+    "out_degree": 287538,
+    "ai_label": {
+      "exchange": "90%",
+      "others": "5%",
+      "kyc": "5%",
+      "scam": "0%"
+    },
+    "mistrack_result": {
+      "label_list": [
+        "LUNO",
+        "hot"
+      ],
+      "label_type": "exchange"
+    }
+  },
+  "38bZBj5peYS3Husdz7AH3gEUiUbYRD951t": {
+    "in_degree": 118378,
+    "out_degree": 23009,
+    "ai_label": {
+      "exchange": "90%",
+      "others": "5%",
+      "kyc": "5%",
+      "scam": "0%"
+    },
+    "mistrack_result": {
+      "label_list": [],
+      "label_type": ""
+    }
+  },
+  "1FoSvYHpgpMsPFSfCz2EYWCVdVm5WKKtwF": {
+    "in_degree": 0,
+    "out_degree": 126712,
+    "ai_label": {
+      "exchange": "90%",
+      "others": "5%",
+      "kyc": "5%",
+      "scam": "0%"
+    },
+    "mistrack_result": {
+      "label_list": [],
+      "label_type": ""
+    }
+  }
+}

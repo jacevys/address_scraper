@@ -327,7 +327,7 @@ def main(address):
         'Label'
     ]
 
-    print(f'address: {address}')
+    # print(f'address: {address}')
 
     result = inference(model_name='btc_xgb_1', address=address, return_function=return_result)
 

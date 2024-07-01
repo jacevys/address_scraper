@@ -1,4 +1,5 @@
 from neo4j import GraphDatabase
+import utils
 
 class Neo4jConnection:
     
@@ -29,11 +30,11 @@ class Neo4jConnection:
             if session is not None:
                 session.close()
         return response
-
+# 
 def init_db(uri, user, password):
     global conn
     conn = Neo4jConnection(uri, user, password)
-
+# 
 def get_degree(db_name, address):
     # Execute a Cypher query specifying the database name
     query_degree = """
@@ -49,7 +50,7 @@ def get_degree(db_name, address):
         return in_degree, out_degree
     else:
         return None, None
-
+# 
 def get_neighbors(db_name, address, limit):
     query_neighbors = """
     MATCH (ac:account {address: $node_address}) -[:input|output]-(:transaction)-[:input|output]-(an:account)
@@ -64,7 +65,21 @@ def get_neighbors(db_name, address, limit):
     for record in query_result:
         nb_list.append(record['nb_address'])
     return nb_list
+#
+def get_address_by_degree(db_name, upper_bound, lower_bound):
+    query_address_by_degree = """
+    MATCH (a:account)
+    WITH a.address AS address, size([(a)<--() | 1]) AS in_degree, size([(a)-->() | 1]) AS out_degree
+    WHERE (in_degree + out_degree) <= $upper_bound AND (in_degree + out_degree) >= $lower_bound
+    RETURN address, in_degree, out_degree
+    """
 
+    parameters = {"upper_bound": upper_bound, "lower_bound": lower_bound}
+    query_result = conn.query(query_address_by_degree, parameters=parameters, db=db_name)
+    address_list = {}
+    for record in query_result:
+        address_list[record['address']] = (record['in_degree'], record['out_degree'])
+    return address_list
 # Close the connection
 def close_db():
     conn.close()
@@ -74,4 +89,5 @@ if __name__ == '__main__':
     indegree, outdegree = get_degree(db_name='bitcoin', address='bc1q4c8n5t00jmj8temxdgcc3t32nkg2wjwz24lywv')
     print(indegree, outdegree)
     nb_list = get_neighbors(db_name='bitcoin', address='bc1q4c8n5t00jmj8temxdgcc3t32nkg2wjwz24lywv', limit=5)
+    utils.saveJson('./nb_list.json', nb_list)
     close_db()
