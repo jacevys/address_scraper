@@ -8,8 +8,11 @@ import time
 import multiprocessing
 from datetime import datetime
 from neo4j import GraphDatabase
+import concurrent.futures
+import threading
+import asyncio
 #
-def inference(model_name, address, return_function):
+async def inference(model_name, address, return_function):
     global reversed_mapping
     label_mapping_1 = {'others': 0, 'exchange': 1, 'kyc': 2}
     reversed_mapping = {label_mapping_1[key]: key for key in label_mapping_1.keys()}
@@ -54,7 +57,7 @@ def inference(model_name, address, return_function):
 
             return label_dict[address]
 #
-def get_degree(uri: str, username: str, password: str, databases: str, address: str) -> int:
+def get_degree(uri: str, username: str, password: str, database: str, address: str, degree_dict: dict, degree_lock: object) -> int:
     query = '''
     MATCH (a:account {address: $address})
     RETURN 
@@ -66,22 +69,18 @@ def get_degree(uri: str, username: str, password: str, databases: str, address: 
     parameters = {
         'address': address,
     }
+ 
+    driver = GraphDatabase.driver(uri, auth=(username, password), database=database)
 
-    counter: int = 0
+    with driver.session() as session:
+        query_result = session.run(query, parameters)
+        result = [dict(record) for record in query_result]
 
-    for database in databases:    
-        driver = GraphDatabase.driver(uri, auth=(username, password), database=database)
-
-        with driver.session() as session:
-            query_result = session.run(query, parameters)
-            result = [dict(record) for record in query_result]
-
+    with degree_lock:
         if result == []:
-            continue
+            degree_dict += 0
         else:
-            counter += (result[0]['in_degree'] + result[0]['out_degree'])
-
-    return counter
+            degree_dict += (result[0]['in_degree'] + result[0]['out_degree'])
 #
 def get_feature(address: str, queue: object, label_dict: object) -> None:
     uri = 'bolt://192.168.200.83:7687'
@@ -89,18 +88,58 @@ def get_feature(address: str, queue: object, label_dict: object) -> None:
     password = 'P@ssw0rd'
     databases = ['bitcoin5', 'bitcoin', 'bitcoin2']
 
-    total_degree = get_degree(uri=uri, username=username, password=password, databases=databases, address=address)
+    trx_dict = {
+        'total_receive': [],
+        'total_send': [],
+        'first_trx': 0,
+        'last_trx': 0
+    }
+    degree_dict = {
+        'total_degree': 0
+    }
+    visited = set()
+    trx_lock = threading.Lock()
+    degree_lock = threading.Lock()
 
-    if total_degree > 10000:
+    with concurrent.futures.ThreadPoolExecutor(max_workers=len(databases)) as executor:
+        for database in databases:
+            executor.submit(get_degree, uri, username, password, database, address, degree_dict, degree_lock)
+
+    if degree_dict['total_degree'] > 10000:
         label_dict[address] = {'exchange': '90%', 'others': '5%', 'kyc': '5%', 'scam': '0%'}
         label_dict['judged'] = True
 
         return
 
-    total_receive, total_send, first_trx, last_trx = get_data(uri, username, password, databases, address)
+    with concurrent.futures.ThreadPoolExecutor(max_workers=len(databases)) as executor:
+        for database in databases:
+            executor.submit(get_data, uri, username, password, database, address, trx_dict, visited, trx_lock)
+
+    total_receive, total_send, first_trx, last_trx = post_process_data(trx_dict)
     feature = calculate_feature(total_receive, total_send, first_trx, last_trx)
 
     queue.put(feature)
+#
+def post_process_data(trx_dict: dict):
+    receive_trx_list_sorted = sort_by_timestamp(trx_dict['total_receive'])
+    send_trx_list_sorted = sort_by_timestamp(trx_dict['total_send'])
+
+    if receive_trx_list_sorted == [] and send_trx_list_sorted == []:
+        return receive_trx_list_sorted, send_trx_list_sorted, 0, 0
+    elif receive_trx_list_sorted == []:
+        first_trx_timestamp = send_trx_list_sorted[-1]['timestamp']
+        last_trx_timestamp =  send_trx_list_sorted[0]['timestamp']
+    elif send_trx_list_sorted == []:
+        first_trx_timestamp = receive_trx_list_sorted[-1]['timestamp']
+        last_trx_timestamp =  receive_trx_list_sorted[0]['timestamp']
+    else:
+        first_trx_timestamp = min(receive_trx_list_sorted[-1]['timestamp'], send_trx_list_sorted[-1]['timestamp'])
+        last_trx_timestamp = max(receive_trx_list_sorted[0]['timestamp'], send_trx_list_sorted[0]['timestamp'])
+
+    receive_trx_list = [(trx['value'] / (10 ** 8)) * 61000 for trx in receive_trx_list_sorted]
+    send_trx_list = [(trx['value'] / (10 ** 8)) * 61000 for trx in send_trx_list_sorted]
+
+    return receive_trx_list, send_trx_list, first_trx_timestamp, last_trx_timestamp
 #
 def convertPercentage(predictions):
     result = []
@@ -160,7 +199,7 @@ def load_dataset(data_list, label_mapping):
     dataset = []
     labelset = []
 
-    json_list = readJson(f'./model_data/{data_list}')
+    json_list = readJson(f'./data/{data_list}')
 
     for i, key_1 in enumerate(json_list.keys()):
         temp = []
@@ -198,7 +237,7 @@ def normalize(dataset=None, test_flag=None, data_min_in=None, data_max_in=None):
 
     return dataset, data_min, data_max
 #
-def get_data(uri: str, username: str, password: str, databases: list, address: str):
+def get_data(uri: str, username: str, password: str, database: str, address: str, trx_dict: dict, visited: set, trx_lock: object):
     query_1 = '''
     MATCH (a:account {address: "%s"})<-[:output]-(t1:transaction)
     WITH t1.hash AS hash, a.address AS address, t1.timestamp AS timestamp, t1 AS transaction, "receive" AS direction
@@ -225,49 +264,25 @@ def get_data(uri: str, username: str, password: str, databases: list, address: s
            record.direction AS direction, r2.value AS value
     ''' % (address, address)
 
-    visited_hash = set()
-    receive_trx_list = []
-    send_trx_list = []
+    driver = GraphDatabase.driver(uri, auth=(username, password), database=database)
 
-    for database in databases:
-        driver = GraphDatabase.driver(uri, auth=(username, password), database=database)
+    with driver.session() as session:
+        result_1 = session.run(query_1)
+        query_result_1 = [dict(record) for record in result_1]
 
-        with driver.session() as session:
-            result_1 = session.run(query_1)
-            query_result_1 = [dict(record) for record in result_1]
+    with driver.session() as session:
+        result_2 = session.run(query_2, sorted_results=query_result_1)
+        query_result_2 = [dict(record) for record in result_2]
 
-        with driver.session() as session:
-            result_2 = session.run(query_2, sorted_results=query_result_1)
-            query_result_2 = [dict(record) for record in result_2]
-
+    with trx_lock:
         for record in query_result_2:
-            if (record['direction'], record['hash']) not in visited_hash and record['value'] != None:
+            if (record['direction'], record['hash']) not in visited and record['value'] != None:
                 if record['direction'] == 'receive':
-                    visited_hash.add(('receive', record['hash']))
-                    receive_trx_list.append(record)
+                    visited.add(('receive', record['hash']))
+                    trx_dict['total_receive'].append(record)
                 else:
-                    visited_hash.add(('send', record['hash']))
-                    send_trx_list.append(record)
-
-    receive_trx_list_sorted = sort_by_timestamp(receive_trx_list)
-    send_trx_list_sorted = sort_by_timestamp(send_trx_list)
-
-    if receive_trx_list_sorted == [] and send_trx_list_sorted == []:
-        return receive_trx_list_sorted, send_trx_list_sorted, 0, 0
-    elif receive_trx_list_sorted == []:
-        first_trx_timestamp = send_trx_list_sorted[-1]['timestamp']
-        last_trx_timestamp =  send_trx_list_sorted[0]['timestamp']
-    elif send_trx_list_sorted == []:
-        first_trx_timestamp = receive_trx_list_sorted[-1]['timestamp']
-        last_trx_timestamp =  receive_trx_list_sorted[0]['timestamp']
-    else:
-        first_trx_timestamp = min(receive_trx_list_sorted[-1]['timestamp'], send_trx_list_sorted[-1]['timestamp'])
-        last_trx_timestamp = max(receive_trx_list_sorted[0]['timestamp'], send_trx_list_sorted[0]['timestamp'])
-
-    receive_trx_list = [(trx['value'] / (10 ** 8)) * 61000 for trx in receive_trx_list_sorted]
-    send_trx_list = [(trx['value'] / (10 ** 8)) * 61000 for trx in send_trx_list_sorted]
-
-    return receive_trx_list, send_trx_list, first_trx_timestamp, last_trx_timestamp
+                    visited.add(('send', record['hash']))
+                    trx_dict['total_send'].append(record)
 #
 def sort_by_timestamp(data: list):
     sorted_data = sorted(data, key=lambda x: x['timestamp'], reverse=True)
@@ -314,7 +329,7 @@ def calculate_feature(total_receive: list, total_send: list, first_trx: float, l
 
     return feature
 #
-def main(address):
+async def main(address):
     global key_list
 
     key_list = [
@@ -329,12 +344,12 @@ def main(address):
 
     print(f'address: {address}')
 
-    result = inference(model_name='btc_xgb_1', address=address, return_function=return_result)
+    result = await inference(model_name='btc_xgb_1', address=address, return_function=return_result)
 
-    # print(f'pred: {result}')
-    # print('#' * 100)
+    print(f'pred: {result}')
+    print('#' * 100)
     return result
 #
 if __name__ == '__main__':
-    main(address='1FWQiwK27EnGXb6BiBMRLJvunJQZZPMcGd')
+    asyncio.run(main(address='bc1quhruqrghgcca950rvhtrg7cpd7u8k6svpzgzmrjy8xyukacl5lkq0r8l2d'))
 #
