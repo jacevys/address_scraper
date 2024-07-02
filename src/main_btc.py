@@ -6,8 +6,8 @@ import os
 from dal_btc import Neo4jConnection
 import inference_ml as ml
 import utils
+from concurrent.futures import ThreadPoolExecutor
 
-NB_LIMIT = 1000
 QUEUE_LIMIT = 10 ** 6
 TIME_LIMIT = 3600
 DEPTH_LIMIT = 10
@@ -119,14 +119,58 @@ def bfs(db_name: str, start_address: str, visited: set):
             element_list.append(neighbor)
 
     return element_list
+# 
+def process_neighbor(neighbor):
+    # Assuming ml.main is now an async function
+    ml_result = ml.main(address=neighbor)
+    return list(ml_result.keys())[0].title() == 'Kyc'
+# 
+def get_kyc_ratio(databases: list[str], address: str):
+    total, kyc = 0, 0
+    for db in databases:
+        neighbors = conn.get_neighbors(db_name=db, address=address, limit=20)
+        print(f"Address: {address}, Database: {db}, Number of neighbors: {len(neighbors)}")
+        total += len(neighbors)
+
+        # for neighbor in neighbors:
+        #     ml_result = ml.main(address=neighbor)
+        #     if list(ml_result.keys())[0].title() == 'Kyc':
+        #         kyc += 1
+
+        # Define a function to process each neighbor
+        def process_neighbor(neighbor):
+            ml_result = ml.main(address=neighbor)
+            return list(ml_result.keys())[0].title() == 'Kyc'
+        
+        # Use ThreadPoolExecutor to parallelize the processing of neighbors
+        with ThreadPoolExecutor(max_workers=10) as executor:
+            results = list(executor.map(process_neighbor, neighbors))
+        
+        # Aggregate the results
+        kyc += sum(results)
+    return kyc / total if total != 0 else float('nan')
 #
-def main(db_name: str, json_file_path: str):
+# def main(db_name: str, json_file_path: str):
+def main():
     global btc_list
     global visited
     global random_walk_list
     global start_time
 
+    start_time = time.time()
     btc_list = readJson('./label_database/btc.json')
+    count, total_ratio = 0, 0
+    for address in btc_list.keys():
+        if btc_list[address]['misttrack_label_type'] == 'exchange' and 'hot' in btc_list[address]['misttrack_label_list']:
+            ratio = get_kyc_ratio(databases=['bitcoin', 'bitcoin2', 'bitcoin5'], address=address)
+            print(f"Address: {address}, KYC ratio: {ratio}")
+            if ratio != float('nan'):
+                total_ratio += ratio
+                count += 1
+    print(f"Total count: {count}, Total KYC ratio: {total_ratio}")
+    print(f"Average KYC ratio: {total_ratio / count}")
+    print(f'elapsed time: {time.time() - start_time} seconds')
+    return
     random_walk_list = {}
     if os.path.exists('./random_walk_list_allen.json'):
         random_walk_list = readJson('./random_walk_list_allen.json')
@@ -203,13 +247,14 @@ def main(db_name: str, json_file_path: str):
 #
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Run the blockchain address processing script.')
-    parser.add_argument('--db-name', type=str, help='Database name', required=True)
-    parser.add_argument('--file-path', type=str, help='JSON file path', required=True)
+    # parser.add_argument('--db-name', type=str, help='Database name', required=True)
+    # parser.add_argument('--file-path', type=str, help='JSON file path', required=True)
     # parser.add_argument('--method', type=str, help='Method to be used for processing addresses (bfs or dfs)', required=True)
     # parser.add_argument('--time-limit', type=int, help='Time limit for processing in seconds', required=True)
     args = parser.parse_args()
     # method = args.method
     # TIME_LIMIT = args.time_limit
 
-    main(args.db_name, args.file_path)
+    # main(args.db_name, args.file_path)
+    main()
 #

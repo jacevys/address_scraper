@@ -28,7 +28,8 @@ async def inference(model_name, address, return_function):
     result_queue = multiprocessing.Queue()
     process = multiprocessing.Process(target=get_feature, args=(address, result_queue, label_dict))
     process.start()
-    process.join(timeout=5)
+    # process.join(timeout=5)
+    process.join(timeout=10)
 
     if label_dict['judged']:
         return label_dict[address]
