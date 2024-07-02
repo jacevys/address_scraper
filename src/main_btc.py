@@ -3,7 +3,7 @@ import time
 from typing import *
 import json
 import os
-import dal_btc as btc
+from dal_btc import Neo4jConnection
 import inference_ml as ml
 import utils
 
@@ -11,6 +11,12 @@ NB_LIMIT = 1000
 QUEUE_LIMIT = 10 ** 6
 TIME_LIMIT = 3600
 DEPTH_LIMIT = 10
+
+# Connection details
+uri = "bolt://192.168.200.83:7687/"
+user = "reader"
+password = "P@ssw0rd"
+conn = Neo4jConnection(uri=uri, user=user, password=password)
 
 method = 'dfs'
 
@@ -49,7 +55,7 @@ def write_json(json_file_path, data, address):
     print('數據已寫入json')
 #
 def write_walk_list(db_name, address, method):
-    in_degree, out_degree = btc.get_degree(db_name=db_name, address=address)
+    in_degree, out_degree = conn.get_degree(db_name=db_name, address=address)
     ml_result = ml.main(address=address)
     write_data = {
             address: {
@@ -74,7 +80,7 @@ def dfs(db_name: str, start_address: str, visited: set, element_list: List,
     if max_depth == 0:
         return element_list
 
-    neighbors = btc.get_neighbors(db_name=db_name, address=address, limit=NB_LIMIT)
+    neighbors = conn.get_neighbors(db_name=db_name, address=address, limit=NB_LIMIT)
     count = 0
     for neighbor in neighbors:
         if len(element_list) > max_element:
@@ -107,7 +113,7 @@ def bfs(db_name: str, start_address: str, visited: set):
     if address not in btc_list.keys() and address not in random_walk_list.keys():
         write_walk_list(db_name=db_name, address=address, method=method)
 
-    neighbors = btc.get_neighbors(db_name=db_name, address=address, limit=NB_LIMIT)
+    neighbors = conn.get_neighbors(db_name=db_name, address=address, limit=NB_LIMIT)
     for neighbor in neighbors:
         if neighbor not in visited and neighbor not in btc_list.keys() and neighbor not in random_walk_list.keys():
             element_list.append(neighbor)
@@ -124,15 +130,6 @@ def main(db_name: str, json_file_path: str):
     random_walk_list = {}
     if os.path.exists('./random_walk_list_allen.json'):
         random_walk_list = readJson('./random_walk_list_allen.json')
-
-    # Connection details
-    uri = "bolt://192.168.200.83:7687/"
-    user = "reader"
-    password = "P@ssw0rd"
-    db_name = db_name
-
-    # Connect to Neo4j
-    btc.init_db(uri, user, password)
 
     visited = set()
     queue = []
@@ -184,7 +181,7 @@ def main(db_name: str, json_file_path: str):
 
     start_time = time.time()
     print(f'Start processing')
-    addresses = btc.get_address_by_degree(db_name=db_name, upper_bound=float('inf'), lower_bound=10000)
+    addresses = conn.get_address_by_degree(db_name=db_name, upper_bound=float('inf'), lower_bound=10000, limit=10000)
     for address, (indegree, outdegree) in addresses.items():
         write_json(json_file_path=json_file_path, 
                    data={address: {"in_degree": indegree, "out_degree": outdegree}}, address=address)
@@ -196,10 +193,6 @@ def main(db_name: str, json_file_path: str):
         # response = utils.get_misttrack_label(coin='BTC', address=address)
     end_time = time.time()
     print(f'elapsed time: {end_time - start_time} seconds')
-        
-
-    # Close the connection
-    btc.close_db()
 
     with open('pending_address.txt', 'a') as f:
         for address in queue:
