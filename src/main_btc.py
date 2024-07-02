@@ -7,6 +7,7 @@ from dal_btc import Neo4jConnection
 import inference_ml as ml
 import utils
 from concurrent.futures import ThreadPoolExecutor
+import asyncio
 
 QUEUE_LIMIT = 10 ** 6
 TIME_LIMIT = 3600
@@ -123,6 +124,7 @@ def bfs(db_name: str, start_address: str, visited: set):
 def process_neighbor(neighbor):
     # Assuming ml.main is now an async function
     ml_result = ml.main(address=neighbor)
+    print(f'ml_result: {ml_result}')
     return list(ml_result.keys())[0].title() == 'Kyc'
 # 
 def get_kyc_ratio(databases: list[str], address: str):
