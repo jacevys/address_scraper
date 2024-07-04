@@ -121,35 +121,40 @@ def bfs(db_name: str, start_address: str, visited: set):
 
     return element_list
 # 
-def process_neighbor(neighbor):
-    # Assuming ml.main is now an async function
-    ml_result = ml.main(address=neighbor)
-    print(f'ml_result: {ml_result}')
-    return list(ml_result.keys())[0].title() == 'Kyc'
-# 
-def get_kyc_ratio(databases: list[str], address: str):
+def get_kyc_ratio(databases: list[str], address: str, json_file_path: str):
     total, kyc = 0, 0
     for db in databases:
-        neighbors = conn.get_neighbors(db_name=db, address=address, limit=20)
+        neighbors = conn.get_neighbors(db_name=db, address=address, limit=200)
         print(f"Address: {address}, Database: {db}, Number of neighbors: {len(neighbors)}")
         total += len(neighbors)
 
-        # for neighbor in neighbors:
-        #     ml_result = ml.main(address=neighbor)
-        #     if list(ml_result.keys())[0].title() == 'Kyc':
-        #         kyc += 1
+        for neighbor in neighbors:
+            if neighbor in visited.keys():
+                label = list(visited[neighbor]['ai_label'].keys())[0].title()
+                if label == 'Kyc' or label == 'Exchange':
+                    kyc += 1
+        neighbors = [neighbor for neighbor in neighbors if neighbor not in visited.keys()]
 
         # Define a function to process each neighbor
         def process_neighbor(neighbor):
-            ml_result = ml.main(address=neighbor)
-            return list(ml_result.keys())[0].title() == 'Kyc'
+            return neighbor, ml.main(address=neighbor)
         
         # Use ThreadPoolExecutor to parallelize the processing of neighbors
         with ThreadPoolExecutor(max_workers=10) as executor:
             results = list(executor.map(process_neighbor, neighbors))
         
         # Aggregate the results
-        kyc += sum(results)
+        for neighbor, ml_result in results:
+            if list(ml_result.keys())[0].title() == 'Kyc' or list(ml_result.keys())[0].title() == 'Exchange':
+                kyc += 1
+            in_degree, out_degree = conn.get_degree(db_name=db, address=neighbor)
+            write_json(json_file_path=json_file_path, 
+                       data={neighbor: {
+                                "in_degree": in_degree, 
+                                "out_degree": out_degree, 
+                                "ai_label": ml_result
+                               }
+                        }, address=neighbor)
     return kyc / total if total != 0 else float('nan')
 #
 # def main(db_name: str, json_file_path: str):
@@ -198,20 +203,54 @@ def main():
     global random_walk_list
     global start_time
 
-    start_time = time.time()
     visited_file_path = './visited_list.json'
     btc_list = readJson('./label_database/btc.json')
+    visited = readJson(visited_file_path)
+    databases = ['bitcoin', 'bitcoin2', 'bitcoin5']
+
+    start_time = time.time()
     count, total_ratio = 0, 0
     for address in btc_list.keys():
         if btc_list[address]['misttrack_label_type'] == 'exchange' and 'hot' in btc_list[address]['misttrack_label_list']:
-            ratio = get_kyc_ratio(databases=['bitcoin', 'bitcoin2', 'bitcoin5'], address=address)
+            ratio = get_kyc_ratio(databases=databases, address=address, json_file_path=visited_file_path)
             print(f"Address: {address}, KYC ratio: {ratio}")
             if ratio != float('nan'):
                 total_ratio += ratio
                 count += 1
-    print(f"Total count: {count}, Total KYC ratio: {total_ratio}")
-    print(f"Average KYC ratio: {total_ratio / count}")
-    print(f'elapsed time: {time.time() - start_time} seconds')
+    avg_ratio = total_ratio / count if count != 0 else float('nan')
+    print(f"Total count: {count}, Total KYC ratio: {total_ratio}, Average KYC ratio: {avg_ratio}")
+    print(f'elapsed time for computing KYC ratio: {time.time() - start_time} seconds')
+
+    start_time = time.time()
+    misttrack_list = []
+    count_filter = 0
+    for db_name in databases:
+        addresses = conn.get_address_by_degree(db_name=db_name, upper_bound=10 ** 9, lower_bound=10000, limit=200)
+        for address, (indegree, outdegree) in addresses.items():
+            write_json(json_file_path=visited_file_path, 
+                       data={address: {
+                                "in_degree": indegree, 
+                                "out_degree": outdegree, 
+                                "ai_label": {
+                                    'exchange': '90%', 
+                                    'others': '5%', 
+                                    'kyc': '5%', 
+                                    'scam': '0%'
+                                    }
+                               }
+                        }, address=address)
+            kyc_ratio = get_kyc_ratio(databases=databases, address=address, json_file_path=visited_file_path)
+            if kyc_ratio != float('nan') and kyc_ratio > avg_ratio * 0.95:
+                misttrack_list.append(kyc_ratio)
+            else:
+                count_filter += 1
+            print(f'Number of filtered list: {count_filter}, Number of misttrack list: {len(misttrack_list)}')
+        if len(misttrack_list) >= 100:
+            break
+    print(f'Number of filtered list: {count_filter}')
+    print(f"Number of misttrack list: {len(misttrack_list)}")
+    print(f'elapsed time for finding misttrack list: {time.time() - start_time} seconds')
+
     return
     visited = readJson(visited_file_path)
     databases = ['bitcoin', 'bitcoin2', 'bitcoin5']
