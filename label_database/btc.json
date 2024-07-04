@@ -41124,5 +41124,16 @@
   "14rBAiTTTm2TPzkzX1Q7wxjY9BxhDrgcqf": {
     "misttrack_label_list": [],
     "misttrack_label_type": ""
+  },
+  "bc1qwqdg6squsna38e46795at95yu9atm8azzmyvckulcc7kytlcckxswvvzej": {
+    "misttrack_label_list": [
+      "Bitflyer",
+      "hot"
+    ],
+    "misttrack_label_type": "defi"
+  },
+  "bc1qrt4lhky8y4vc3a8qh9tkml8dhlr66unscslpjf": {
+    "misttrack_label_list": [],
+    "misttrack_label_type": ""
   }
 }

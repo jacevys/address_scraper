@@ -12,7 +12,7 @@ import concurrent.futures
 import threading
 import asyncio
 #
-async def inference(model_name, address, return_function):
+def inference(model_name, address, return_function):
     global reversed_mapping
     label_mapping_1 = {'others': 0, 'exchange': 1, 'kyc': 2}
     reversed_mapping = {label_mapping_1[key]: key for key in label_mapping_1.keys()}
@@ -330,7 +330,7 @@ def calculate_feature(total_receive: list, total_send: list, first_trx: float, l
 
     return feature
 #
-async def main(address):
+def main(address):
     global key_list
 
     key_list = [
@@ -345,12 +345,12 @@ async def main(address):
 
     # print(f'address: {address}')
 
-    result = await inference(model_name='btc_xgb_1', address=address, return_function=return_result)
+    result = inference(model_name='btc_xgb_1', address=address, return_function=return_result)
 
-    print(f'pred: {result}')
-    print('#' * 100)
+    # print(f'pred: {result}')
+    # print('#' * 100)
     return result
 #
 if __name__ == '__main__':
-    asyncio.run(main(address='bc1quhruqrghgcca950rvhtrg7cpd7u8k6svpzgzmrjy8xyukacl5lkq0r8l2d'))
+    main(address='bc1quhruqrghgcca950rvhtrg7cpd7u8k6svpzgzmrjy8xyukacl5lkq0r8l2d')
 #

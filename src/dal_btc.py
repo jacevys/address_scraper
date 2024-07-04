@@ -35,7 +35,7 @@ class Neo4jConnection:
                 in_degree, out_degree = record['in_degree'], record['out_degree']
 
         except Exception as e:
-            print("Query failed:", e)
+            print("Query failed (get_degree):", e)
         finally:
             if session is not None:
                 session.close()
@@ -58,18 +58,17 @@ class Neo4jConnection:
             for record in response:
                 neighbors.append(record['neighbor_address'])
         except Exception as e:
-            print("Query failed:", e)
+            print("Query failed (get_neighbors):", e)
         finally:
             if session is not None:
                 session.close()
         return neighbors
     
-    def get_address_by_degree(self, db_name: str, upper_bound: int, lower_bound: int, limit: int):
+    def get_address_by_degree(self, db_name: str, lower_bound: int, limit: int):
         query = """
         MATCH (a:account)
-        WHERE a.bcs_label IS NULL
         WITH a.address AS address, size([(a)<--() | 1]) AS in_degree, size([(a)-->() | 1]) AS out_degree
-        WHERE (in_degree + out_degree) <= $upper_bound AND (in_degree + out_degree) >= $lower_bound
+        WHERE (in_degree + out_degree) >= $lower_bound
         RETURN address, in_degree, out_degree
         LIMIT $limit
         """
@@ -79,11 +78,11 @@ class Neo4jConnection:
         address_list = {}
         try:
             session = self.__driver.session(database=db_name)
-            response = list(session.run(query, parameters={"upper_bound": upper_bound, "lower_bound": lower_bound, "limit": limit}))
+            response = list(session.run(query, parameters={"lower_bound": lower_bound, "limit": limit}))
             for record in response:
                 address_list[record['address']] = (record['in_degree'], record['out_degree'])
         except Exception as e:
-            print("Query failed:", e)
+            print("Query failed (get_address_by_degree):", e)
         finally:
             if session is not None:
                 session.close()
