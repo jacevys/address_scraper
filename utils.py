@@ -60,9 +60,8 @@ def func_1():
             print('-' * 50)
 #
 if __name__ == '__main__':
-    #response = get_misttrack_label(coin='BTC', address='3Ai97uJfrC8kLUdgydLPfKFwFmAE5s9b7t')
-    #print(response)
-    func_1()
+    response = get_misttrack_label(coin='ETH', address='0x7a250d5630b4cf539739df2c5dacb4c659f2488d')
+    print(response)
 #
 '''
 labeld: 413/2656
