@@ -1,0 +1,14 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": "Python: kyc_verify",
+        "type": "python",
+        "request": "launch",
+        "mode": "debug",
+        "program": "${workspaceFolder}/src/kyc_verify.py",
+        "console": "integratedTerminal",
+        "justMyCode": true
+      }
+    ]
+}

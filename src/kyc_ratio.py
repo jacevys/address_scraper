@@ -3,6 +3,7 @@ import inference_ml as ml
 from concurrent.futures import ThreadPoolExecutor
 import utils
 import time
+import math
 
 # Connection details
 uri = "bolt://192.168.200.83:7687/"
@@ -67,7 +68,7 @@ def main():
         if btc_list[address]['misttrack_label_type'] == 'exchange' and 'hot' in btc_list[address]['misttrack_label_list']:
             ratio = get_kyc_ratio(databases=databases, address=address, json_file_path=visited_file_path)
             print(f"Address: {address}, KYC ratio: {ratio}")
-            if ratio != float('nan'):
+            if not math.isnan(ratio):
                 total_ratio += ratio
                 count += 1
     avg_ratio = total_ratio / count if count != 0 else float('nan')

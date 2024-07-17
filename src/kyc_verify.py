@@ -1,8 +1,9 @@
 from dal_btc import Neo4jConnection
 import inference_ml as ml
-from concurrent.futures import ThreadPoolExecutor
+from concurrent.futures import ThreadPoolExecutor, as_completed
 import utils
 import time
+import math
 
 # Connection details
 uri = "bolt://192.168.200.83:7687/"
@@ -12,6 +13,8 @@ conn = Neo4jConnection(uri=uri, user=user, password=password)
 
 # 
 def get_kyc_ratio(databases: list[str], address: str, json_file_path: str):
+    start_time = time.time()
+
     total, kyc = 0, 0
     for db in databases:
         neighbors = conn.get_neighbors(db_name=db, address=address, limit=10 ** 4)
@@ -27,14 +30,30 @@ def get_kyc_ratio(databases: list[str], address: str, json_file_path: str):
 
         # Define a function to process each neighbor
         def process_neighbor(neighbor):
-            return neighbor, ml.main(address=neighbor)
+            try:
+                return neighbor, ml.main(address=neighbor)
+            except Exception as e:
+                print(f"Error processing neighbor: {neighbor}: {e}")
+                return neighbor, None
         
+        print('Start processing neighbors...')
+
         # Use ThreadPoolExecutor to parallelize the processing of neighbors
         with ThreadPoolExecutor(max_workers=10) as executor:
-            results = list(executor.map(process_neighbor, neighbors))
+            future_to_neighbor = [executor.submit(process_neighbor, neighbor) for neighbor in neighbors]
+            results = []
+            for future in as_completed(future_to_neighbor):
+                try:
+                    results.append(future.result())
+                except Exception as e:
+                    print(f"Error processing future: {e}")
+
+        print('Finishe processing neighbors.')
         
         # Aggregate the results
         for neighbor, ml_result in results:
+            if ml_result is None:
+                return float('nan')
             if list(ml_result.keys())[0].title() == 'Kyc' or list(ml_result.keys())[0].title() == 'Exchange':
                 kyc += 1
             # in_degree, out_degree = conn.get_degree(db_name=db, address=neighbor)
@@ -45,6 +64,9 @@ def get_kyc_ratio(databases: list[str], address: str, json_file_path: str):
             #                     "ai_label": ml_result
             #                    }
             #             }, address=neighbor)
+
+    print(f'elapsed time for processing all neighbors: {time.time() - start_time} seconds')
+
     return kyc / total if total != 0 else float('nan')
 
 # 
@@ -62,7 +84,7 @@ def main():
     misttrack_exclued_file_path = './misttrack_excluded_list.json'
     with open(avg_ratio_file_path, 'r') as f:
         avg_ratio = float(f.read().split(': ')[1])
-    if avg_ratio == float('nan'):
+    if math.isnan(avg_ratio):
         print("No average KYC ratio found, please run kyc_ratio.py first.")
         return
     databases = ['bitcoin', 'bitcoin2', 'bitcoin5']
@@ -74,8 +96,11 @@ def main():
     start_time = time.time()
     for address in misttrack_list.keys():
         kyc_ratio = get_kyc_ratio(databases=databases, address=address, json_file_path=visited_file_path)
+        if math.isnan(kyc_ratio):
+            print(f"Error processing address: {address}")
+            break
         print(f"Address: {address}, KYC ratio: {kyc_ratio}")
-        json_file_path = misttrack_file_path if kyc_ratio != float('nan') and kyc_ratio >= avg_ratio else misttrack_exclued_file_path
+        json_file_path = misttrack_file_path if kyc_ratio >= avg_ratio else misttrack_exclued_file_path
         utils.write_json(json_file_path=json_file_path, 
                     data={address: {
                             "in_degree": misttrack_list[address]['in_degree'], 
