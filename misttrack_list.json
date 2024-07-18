@@ -1,0 +1,822 @@
+{
+  "bc1q7cyrfmck2ffu2ud3rn5l5a8yv6f0chkp0zpemf": {
+    "in_degree": 164148,
+    "out_degree": 164930,
+    "kyc_ratio": 0.2286
+  },
+  "1BwGUtHirPQ4dKusbCTcxMbxBTu24yRkHa": {
+    "in_degree": 50044,
+    "out_degree": 50033,
+    "kyc_ratio": 0.20414275018717246
+  },
+  "3L1p2tUHPwrRN3qgf4Hm1R73e29hFshbnp": {
+    "in_degree": 44104,
+    "out_degree": 44031,
+    "kyc_ratio": 0.1931
+  },
+  "1HckjUpRGcrrRAtFaaCAUaGjsPx9oYmLaZ": {
+    "in_degree": 4696239,
+    "out_degree": 3152529,
+    "kyc_ratio": 0.22606666666666667
+  },
+  "1PspbXiSzBcFt9DrRJcsqyqicHzA4EjCf4": {
+    "in_degree": 5441,
+    "out_degree": 5401,
+    "kyc_ratio": 0.18202131316603645
+  },
+  "39EKjvDK6UEkpaBcLVbBen1M4dhh2iE9Lq": {
+    "in_degree": 34291,
+    "out_degree": 34210,
+    "kyc_ratio": 0.3389
+  },
+  "3G5hBoSmASwMR1aK7SfVaR7hXr1nZPgUBe": {
+    "in_degree": 34355,
+    "out_degree": 34239,
+    "kyc_ratio": 0.32075
+  },
+  "3JXRVxhrk2o9f4w3cQchBLwUeegJBj6BEp": {
+    "in_degree": 985051,
+    "out_degree": 984146,
+    "kyc_ratio": 0.19375
+  },
+  "12xjTvg1aqK9Jc46N4cxTLiKnCWnDwD4S9": {
+    "in_degree": 77032,
+    "out_degree": 71702,
+    "kyc_ratio": 0.191
+  },
+  "32KjPxjHy3begY6E8mW8xmDUK7WmoWxpLC": {
+    "in_degree": 15781,
+    "out_degree": 15777,
+    "kyc_ratio": 0.18583736079008195
+  },
+  "1CoMGSUVCw2FKEuBG95PPXLehwr19v5z5P": {
+    "in_degree": 31105,
+    "out_degree": 31072,
+    "kyc_ratio": 0.2243
+  },
+  "18jw9quXuasgkieu37aWYxBjDaV548BcF": {
+    "in_degree": 10810,
+    "out_degree": 10755,
+    "kyc_ratio": 0.16697238609885479
+  },
+  "35pSuJXjPDoKuKn9GcTh8d71v1djJjbsDc": {
+    "in_degree": 5330,
+    "out_degree": 6446,
+    "kyc_ratio": 0.25395
+  },
+  "18w4VZVEYcEygbcb3ZQUkqsSouQQ1UsThZ": {
+    "in_degree": 17248,
+    "out_degree": 17244,
+    "kyc_ratio": 0.21035
+  },
+  "3GfWyoYqUYPCQBtCN7UvzRF1QPKQExL79V": {
+    "in_degree": 59680,
+    "out_degree": 59031,
+    "kyc_ratio": 0.3049
+  },
+  "1ALnjJaKSEeWu8QaeKshB5hAxGuAvR1wFo": {
+    "in_degree": 9476,
+    "out_degree": 9415,
+    "kyc_ratio": 0.3051333333333333
+  },
+  "19gSUNjurjur142c9XL65ZsoCYQubtyGuN": {
+    "in_degree": 5915,
+    "out_degree": 5995,
+    "kyc_ratio": 0.26175687666370895
+  },
+  "16pji25kgmPNXEHN4NqgCCtLS7LT1cqukM": {
+    "in_degree": 23578,
+    "out_degree": 23665,
+    "kyc_ratio": 0.25165
+  },
+  "3E5NsFYg9H64TSB9MroJCCZJG7dJ179Yge": {
+    "in_degree": 208187,
+    "out_degree": 207917,
+    "kyc_ratio": 0.1992
+  },
+  "14GnbaDLNEwULb4HFCyfTjyP9U7g5n3bZx": {
+    "in_degree": 6827,
+    "out_degree": 6789,
+    "kyc_ratio": 0.2275
+  },
+  "3C3wyZ1wzDH3ror1qaqe6ZmCMNMGD4YsLt": {
+    "in_degree": 11797,
+    "out_degree": 11681,
+    "kyc_ratio": 0.1794
+  },
+  "37GH9HY5x2wgbffyTfZL16TcvATuUV1xFC": {
+    "in_degree": 5512,
+    "out_degree": 5506,
+    "kyc_ratio": 0.19221198760204306
+  },
+  "1BfNzvCx75KNehcYZUojwG1gBBqjp6gFZ": {
+    "in_degree": 5079,
+    "out_degree": 5065,
+    "kyc_ratio": 0.2843733573627694
+  },
+  "3JodN7GmkHdPgKj9G7HCkn9NDLhrcWCjVN": {
+    "in_degree": 156778,
+    "out_degree": 156022,
+    "kyc_ratio": 0.5218666666666667
+  },
+  "334L8AmFLHdPtnUQNuDcDjGo1b8Tc3Hr4j": {
+    "in_degree": 6976,
+    "out_degree": 5973,
+    "kyc_ratio": 0.4977666666666667
+  },
+  "1MpwLMHAFLNe2asWsXFLk26D5A9uX3heXS": {
+    "in_degree": 23597,
+    "out_degree": 3692,
+    "kyc_ratio": 0.2551
+  },
+  "113HmGnGcE4u1Y1gLNerekpwsQkRasmb1e": {
+    "in_degree": 17850,
+    "out_degree": 18380,
+    "kyc_ratio": 0.28664658634538154
+  },
+  "1AtuaJtbV52DnWPCPqRnLQwKkxH4jHXWLf": {
+    "in_degree": 5746,
+    "out_degree": 5676,
+    "kyc_ratio": 0.1885
+  },
+  "bc1q2mqktajedf6t5ca6j8j5m6ssxwf29fek5y4zc3": {
+    "in_degree": 7933,
+    "out_degree": 7732,
+    "kyc_ratio": 0.18233142493638677
+  },
+  "1NkoNfJQyQhLZW6FUpMW2mJaJ8C9CrLTnW": {
+    "in_degree": 123655,
+    "out_degree": 77839,
+    "kyc_ratio": 0.2057
+  },
+  "1Fu3iBR2EMQWeYGi3XvrPmcPUkne8ZWj9h": {
+    "in_degree": 36171,
+    "out_degree": 33146,
+    "kyc_ratio": 0.26326666666666665
+  },
+  "bc1qps30w57sqckhpduydw0tv2g0jtjwhkmzumeqd2ga7d5u98k5mnjqj02fwt": {
+    "in_degree": 6960,
+    "out_degree": 6951,
+    "kyc_ratio": 0.2276674520363514
+  },
+  "1NdqsVP87fu7qRqizsis6xhu5JcyvAyfLC": {
+    "in_degree": 6649,
+    "out_degree": 6579,
+    "kyc_ratio": 0.27233009708737865
+  },
+  "3479gSjwpQXmw2PtuDqyTRqLk5b8e1KLJi": {
+    "in_degree": 59490,
+    "out_degree": 58919,
+    "kyc_ratio": 0.34596637819556353
+  },
+  "32B5bw2ohLfvgBva2B4X3aao9iDa7Eakp5": {
+    "in_degree": 11681,
+    "out_degree": 11556,
+    "kyc_ratio": 0.2799961138637909
+  },
+  "3HGGfNtkwKHFDjzhKRH4Mty2UUTvXt64hm": {
+    "in_degree": 6881,
+    "out_degree": 6812,
+    "kyc_ratio": 0.2676198147402336
+  },
+  "bc1qzjeg3h996kw24zrg69nge97fw8jc4v7v7yznftzk06j3429t52vse9tkp9": {
+    "in_degree": 12646,
+    "out_degree": 17414,
+    "kyc_ratio": 0.22715415178392262
+  },
+  "1zJRsuq5jXyX5fCbqLC5DjZys9Hj5BjLE": {
+    "in_degree": 29095,
+    "out_degree": 29080,
+    "kyc_ratio": 0.17491633784526248
+  },
+  "3DHfcdLNUwVuqXLoBm8e8ynLrWT1eeC7d6": {
+    "in_degree": 17797,
+    "out_degree": 17741,
+    "kyc_ratio": 0.23752624737526248
+  },
+  "1NPBNFKMtokTmdfXpLy4eQJUVNoVov8wkE": {
+    "in_degree": 5751,
+    "out_degree": 5748,
+    "kyc_ratio": 0.2831666666666667
+  },
+  "1Eotf1yoemNmEAbsjnAsGkhhkFojKj45yh": {
+    "in_degree": 10639,
+    "out_degree": 10631,
+    "kyc_ratio": 0.1779
+  },
+  "32rtpdd4FMgc5pRWcx7KXEW2isKkGAncya": {
+    "in_degree": 8206,
+    "out_degree": 8167,
+    "kyc_ratio": 0.2695255651498981
+  },
+  "1LnMMkHZLbL7pBckmBjBDMdASEk2aGeZkt": {
+    "in_degree": 17157,
+    "out_degree": 17125,
+    "kyc_ratio": 0.20916798271132905
+  },
+  "156BdnJQ6cd2WrTeP7q7FBZHRRyoQPMvaJ": {
+    "in_degree": 13316,
+    "out_degree": 13296,
+    "kyc_ratio": 0.17135
+  },
+  "bc1qpen0aj43e9x8dlszkwslle8qwy7lr3jsnmvyp5": {
+    "in_degree": 18262,
+    "out_degree": 18399,
+    "kyc_ratio": 0.1904225049659097
+  },
+  "3BnLqFH6norMw9pk8Aov2tkuhRozva6A5a": {
+    "in_degree": 13173,
+    "out_degree": 13264,
+    "kyc_ratio": 0.23424088601753576
+  },
+  "1FLYVqUGUgbZYBdMrAqMsfWF5174QUEEXJ": {
+    "in_degree": 24307,
+    "out_degree": 23606,
+    "kyc_ratio": 0.16925
+  },
+  "bc1qm9vv9nuwfevdyrdqve7kd3nlkfrxp9zpvr4r2u": {
+    "in_degree": 29236,
+    "out_degree": 29274,
+    "kyc_ratio": 0.2427027027027027
+  },
+  "bc1qa56lzf7d05ttur003zmuzwrgl3x0qau5zm2qzn": {
+    "in_degree": 21395,
+    "out_degree": 21369,
+    "kyc_ratio": 0.1903404829758512
+  },
+  "36GNnB2G8mo7nv62MmtH4sUUg647rFxrwP": {
+    "in_degree": 7048,
+    "out_degree": 5404,
+    "kyc_ratio": 0.22316666666666668
+  },
+  "14LPEvQNU1dsxRUMbrP8aqansundxnKhiE": {
+    "in_degree": 13192,
+    "out_degree": 12876,
+    "kyc_ratio": 0.5425
+  },
+  "1Gr2HYN2y4x4unLh4YEHT5GsDuMBSAq7hW": {
+    "in_degree": 9933,
+    "out_degree": 9924,
+    "kyc_ratio": 0.2916
+  },
+  "1changerPHuUgXPdSHRxBd2wWT2TdQB1y": {
+    "in_degree": 20400,
+    "out_degree": 20238,
+    "kyc_ratio": 0.20106322384659198
+  },
+  "172BbeqrVZ8CwvkmpX8sfzaQdsaj23bLtM": {
+    "in_degree": 36666,
+    "out_degree": 36647,
+    "kyc_ratio": 0.2276
+  },
+  "1MDvBGdZqbA371cWtUHPf6UqVBkqxJriyq": {
+    "in_degree": 9218,
+    "out_degree": 9314,
+    "kyc_ratio": 0.4609982068141064
+  },
+  "1DFTXbfnivNcjAKhuWt233MnFmfoiNvVyK": {
+    "in_degree": 7309,
+    "out_degree": 7266,
+    "kyc_ratio": 0.2113841063660315
+  },
+  "bc1ql4hjt3newq69a9ty9ymzpjwuex4msuk9jd6z7d8570zkh995v6cs576m62": {
+    "in_degree": 5165,
+    "out_degree": 5161,
+    "kyc_ratio": 0.24680966603312518
+  },
+  "1NZRND4gxM1aWr8478r7qv5t6WBAUSaBdd": {
+    "in_degree": 7800,
+    "out_degree": 7795,
+    "kyc_ratio": 0.17582242095177258
+  },
+  "334TEtk1iw7dxoPDfEohEQTorNYwPk8kCL": {
+    "in_degree": 11192,
+    "out_degree": 11105,
+    "kyc_ratio": 0.30185945423810673
+  },
+  "1AyH9eg9yqq8nXTuPZVL4Xvb8HhDEEJ4br": {
+    "in_degree": 10641,
+    "out_degree": 10635,
+    "kyc_ratio": 0.23505
+  },
+  "1Gn55YUDJaWC2boJNx688u2v9iS9a8umL": {
+    "in_degree": 12829,
+    "out_degree": 12865,
+    "kyc_ratio": 0.23266666666666666
+  },
+  "3C8uVrgiUoQFRadpy34ecD7xVi2s8yTpPc": {
+    "in_degree": 7614,
+    "out_degree": 7641,
+    "kyc_ratio": 0.20104457849051052
+  },
+  "1KFHE7w8BhaENAswwryaoccDb6qcT6DbYY": {
+    "in_degree": 1989,
+    "out_degree": 21637,
+    "kyc_ratio": 0.19158857349812122
+  },
+  "39XpoaixBAbUZzaq7g73tmvogBw6rGv8JP": {
+    "in_degree": 5879,
+    "out_degree": 5875,
+    "kyc_ratio": 0.5048484193071627
+  },
+  "bc1qegzuud443w2ajhagkzysrsq5dch6uqhcl3rtghng3x0yel0enf5qeeggya": {
+    "in_degree": 6133,
+    "out_degree": 6130,
+    "kyc_ratio": 0.23888621409083613
+  },
+  "bc1q866sv2stppgtywjejsjj3xsfrsm5e2f5zqwsx9z0qcx9k34f0xlqaslnwr": {
+    "in_degree": 12653,
+    "out_degree": 17331,
+    "kyc_ratio": 0.22862985685071574
+  },
+  "bc1qpfsckufdjx9mrwjekumu9gmmgr24wd682nhj2awwg8gg6hmc9husfdp68p": {
+    "in_degree": 12868,
+    "out_degree": 16486,
+    "kyc_ratio": 0.2283815577661287
+  },
+  "3GGFs4WArtSzadCKe6Y8dcWtNFJKR7atmb": {
+    "in_degree": 10061,
+    "out_degree": 10059,
+    "kyc_ratio": 0.16979212094781218
+  },
+  "35tj4bj5edAseGcgbUiG1bue4Rmtvb6e1E": {
+    "in_degree": 7977,
+    "out_degree": 8235,
+    "kyc_ratio": 0.23005583879582422
+  },
+  "1LBVuSig83hEBzEuvf7KPyB6dYvAQdfBXQ": {
+    "in_degree": 18871,
+    "out_degree": 18889,
+    "kyc_ratio": 0.29873333333333335
+  },
+  "1Lmnq3J64oJW2K5KgFZHB1b3DpTvEiCUWE": {
+    "in_degree": 5142,
+    "out_degree": 5069,
+    "kyc_ratio": 0.20903954802259886
+  },
+  "1C7Vgp88fgLnePkfWoQGySTUmVAaKTGUAW": {
+    "in_degree": 5031,
+    "out_degree": 5061,
+    "kyc_ratio": 0.2613
+  },
+  "13XELAcu1AiCSjpGkBRQUdsThFMsfPm875": {
+    "in_degree": 14920,
+    "out_degree": 14906,
+    "kyc_ratio": 0.21375
+  },
+  "181CenP4mHc9rHiavQrxMijQM5rgXf1HXn": {
+    "in_degree": 5741,
+    "out_degree": 5718,
+    "kyc_ratio": 0.3075
+  },
+  "1GZk8mfbycqnnybXEdWQhA8Xcf9yoXmjte": {
+    "in_degree": 6956,
+    "out_degree": 6984,
+    "kyc_ratio": 0.2734333333333333
+  },
+  "1MUMsfpL9mowPFbMwFxQeGkzRmJxzkADzV": {
+    "in_degree": 10935,
+    "out_degree": 10918,
+    "kyc_ratio": 0.2365998712072427
+  },
+  "13vidijJgzpt7AbrN5TqF2tf4bqXom9kuH": {
+    "in_degree": 6050,
+    "out_degree": 6058,
+    "kyc_ratio": 0.1979
+  },
+  "1K4mxwo2G3SA8jrQYZiVpp5Q2XTqAtUCop": {
+    "in_degree": 11860,
+    "out_degree": 11853,
+    "kyc_ratio": 0.24355325571366968
+  },
+  "3QkGnvRt7Crxg4kdR5riDEM9pMTibwfBQD": {
+    "in_degree": 46492,
+    "out_degree": 27227,
+    "kyc_ratio": 0.26793333333333336
+  },
+  "193A4bm7FgJZNock5xYQQuRiDEdCxKMnLw": {
+    "in_degree": 5952,
+    "out_degree": 5930,
+    "kyc_ratio": 0.2373
+  },
+  "3JgfqZmwGFseH7hpkmrejyoryUkXaXriyE": {
+    "in_degree": 116166,
+    "out_degree": 116164,
+    "kyc_ratio": 0.21593333333333334
+  },
+  "1M6XyT3ThFEiJEDGjJALZGoHQY4J2qJ5nS": {
+    "in_degree": 6316,
+    "out_degree": 6403,
+    "kyc_ratio": 0.2516
+  },
+  "1D19wA62n3k9vG2BvF4jkRu3mMyqmM7Ey2": {
+    "in_degree": 23299,
+    "out_degree": 21929,
+    "kyc_ratio": 0.2545603454694364
+  },
+  "1Q57v5pnVxGDmYkctQVK9hGcNxG4Vbqv4Y": {
+    "in_degree": 22308,
+    "out_degree": 22236,
+    "kyc_ratio": 0.26965
+  },
+  "1N1Q32Yzjz9nYKqyLvkYg8RMJ2YrisxQt4": {
+    "in_degree": 9535,
+    "out_degree": 9553,
+    "kyc_ratio": 0.23280898876404493
+  },
+  "1J9UZvdFP5betiX2oFkeHBcDjVXD8ceFPV": {
+    "in_degree": 8614,
+    "out_degree": 8579,
+    "kyc_ratio": 0.2390715095362476
+  },
+  "1HmgoMEYJax6nWqFGX3R4EU91HnMYz4Lhm": {
+    "in_degree": 5023,
+    "out_degree": 5004,
+    "kyc_ratio": 0.2142
+  },
+  "1G5YMWgDVj1ekteWDVMZx5j4AjAbJs6d8K": {
+    "in_degree": 13303,
+    "out_degree": 13322,
+    "kyc_ratio": 0.24513333333333334
+  },
+  "13q2vzkRfGFHNzYtKt242SbrpfCKitg1Sx": {
+    "in_degree": 9962,
+    "out_degree": 9867,
+    "kyc_ratio": 0.16839158042097896
+  },
+  "1qzTFQyZCfx1xcPDKjnKxHzyZHzv5weL8": {
+    "in_degree": 27588,
+    "out_degree": 27096,
+    "kyc_ratio": 0.27325
+  },
+  "1JaLcWmap1HnLMTpwWkG1f7Qg1RsQipf5Q": {
+    "in_degree": 5334,
+    "out_degree": 4840,
+    "kyc_ratio": 0.2340400261298177
+  },
+  "39cBQAj1B71dP1ZgKVmVE97a56ibbZHQya": {
+    "in_degree": 17291,
+    "out_degree": 17285,
+    "kyc_ratio": 0.24118758434547907
+  },
+  "1BzQjVYnbtvv5TMPXDz77qbEmLYJrS9zTW": {
+    "in_degree": 10078,
+    "out_degree": 10098,
+    "kyc_ratio": 0.2458
+  },
+  "1PxcPcCW9SghDwrv6rYCQDduogtHZffvnG": {
+    "in_degree": 10634,
+    "out_degree": 10379,
+    "kyc_ratio": 0.2714666666666667
+  },
+  "1DGdsYzdZifnNtLbx8LrF9bBYGQZHdw5dM": {
+    "in_degree": 8045,
+    "out_degree": 8127,
+    "kyc_ratio": 0.22475
+  },
+  "15B1Lkv5u9Z9Zoaba3N8zWv8E2N3rk5GkB": {
+    "in_degree": 6015,
+    "out_degree": 6198,
+    "kyc_ratio": 0.1913
+  },
+  "345j2JWoSaDTwDAB14quFHjovgmkY8mFRh": {
+    "in_degree": 7004,
+    "out_degree": 7012,
+    "kyc_ratio": 0.18766456554695604
+  },
+  "3Duu5WdLVbGLxF986cycrTxmHtmczUBeJd": {
+    "in_degree": 5769,
+    "out_degree": 5737,
+    "kyc_ratio": 0.19716666666666666
+  },
+  "16zTaRYtkVHY6RSJtuWN1LthXGUXoAEtyn": {
+    "in_degree": 9480,
+    "out_degree": 9625,
+    "kyc_ratio": 0.1823
+  },
+  "1H9RwpMyKMdp4tLQKtCbhbrK8vLHGJQXsW": {
+    "in_degree": 5063,
+    "out_degree": 5062,
+    "kyc_ratio": 0.2778
+  },
+  "1EjDjdBKJoNTHN2HKA6Zh2WSoCPJwMC38i": {
+    "in_degree": 5453,
+    "out_degree": 5404,
+    "kyc_ratio": 0.51185
+  },
+  "191XZcxXysPBqhdGsQriYpaz2cDBCkCcNQ": {
+    "in_degree": 7620,
+    "out_degree": 7524,
+    "kyc_ratio": 0.2289
+  },
+  "1MQdusKcjNy8wtNGXodQjS3eugc7NCpvJU": {
+    "in_degree": 25039,
+    "out_degree": 25028,
+    "kyc_ratio": 0.2813735456907263
+  },
+  "1AmNno7zUXzFE5gbtQsx9pFAxCTPjAgmnn": {
+    "in_degree": 11095,
+    "out_degree": 11089,
+    "kyc_ratio": 0.3049
+  },
+  "1DiQtuhWV4s4kdZi1E6ZBZxw3efQm3AUMn": {
+    "in_degree": 10911,
+    "out_degree": 10884,
+    "kyc_ratio": 0.2813
+  },
+  "1GAXTpQESrSzrhQ9TAYPhzLn4qS6y3yQxD": {
+    "in_degree": 61569,
+    "out_degree": 61530,
+    "kyc_ratio": 0.22725
+  },
+  "1DayT1VM6txCMRqPEEhAwjVmbEZG6RZxVs": {
+    "in_degree": 6624,
+    "out_degree": 6560,
+    "kyc_ratio": 0.18665
+  },
+  "17C1zQxUSEkUmj4evRSMdQ1cUGZTenPZ2v": {
+    "in_degree": 6612,
+    "out_degree": 6301,
+    "kyc_ratio": 0.18804076139203998
+  },
+  "1QFkdMK365Du9W9PLAWNtVBP8QrE6pFPba": {
+    "in_degree": 5561,
+    "out_degree": 5520,
+    "kyc_ratio": 0.2181
+  },
+  "3NSa5aSknNkZzw4M8iiXRcW1sjid8quXdt": {
+    "in_degree": 27565,
+    "out_degree": 27564,
+    "kyc_ratio": 0.1731
+  },
+  "39GbmTGjqMRmcuiuBDajiB8eWAnEvLDdsq": {
+    "in_degree": 11119,
+    "out_degree": 11101,
+    "kyc_ratio": 0.18666666666666668
+  },
+  "341CS7FFbQgx249kWyJhXG6Fmn5vj5qhAf": {
+    "in_degree": 7752,
+    "out_degree": 7755,
+    "kyc_ratio": 0.1956
+  },
+  "1L1xSXttdsBAPVjVfyoyCg3RZbdHinT5G5": {
+    "in_degree": 33110,
+    "out_degree": 32466,
+    "kyc_ratio": 0.4074
+  },
+  "3Hi5VHVgmYZYfAPc9aNvQoNXyEv5rYvJQN": {
+    "in_degree": 5253,
+    "out_degree": 5216,
+    "kyc_ratio": 0.1886
+  },
+  "3DY7xrLJeB5dHWdRBbs2t15sSPtT4vjCxQ": {
+    "in_degree": 11073,
+    "out_degree": 11114,
+    "kyc_ratio": 0.2465
+  },
+  "1NNANQPMcDbhkbKgouYnhLMQ8esu8tHJ1C": {
+    "in_degree": 7183,
+    "out_degree": 7189,
+    "kyc_ratio": 0.24589772455906936
+  },
+  "3HzzsUCodZMezMkj1CdSBCj1fG96aVLVrr": {
+    "in_degree": 9125,
+    "out_degree": 9072,
+    "kyc_ratio": 0.31183333333333335
+  },
+  "1EmhqHhP6GAqhisZ4yTvgUbGvvY8H7Ufa9": {
+    "in_degree": 7835,
+    "out_degree": 7827,
+    "kyc_ratio": 0.25925
+  },
+  "161WZERvQJJYqihfzzVKwBG4gsb5rdn1fb": {
+    "in_degree": 6493,
+    "out_degree": 6635,
+    "kyc_ratio": 0.2961
+  },
+  "1oDweZyxBG1gVVEdsn2Kt3VzKpFUYjS7K": {
+    "in_degree": 10772,
+    "out_degree": 10774,
+    "kyc_ratio": 0.21745650869826036
+  },
+  "19msUPsm7cHG8pGTavUr2AeZJsoRTNju1P": {
+    "in_degree": 7896,
+    "out_degree": 7384,
+    "kyc_ratio": 0.19053333333333333
+  },
+  "1KiYvvi3R2p5ajdruk4CuLyGzj1sUz9rL9": {
+    "in_degree": 8196,
+    "out_degree": 8813,
+    "kyc_ratio": 0.22205
+  },
+  "1HRP4xDFCHr1cKCvKZBLQS72gstHXqwQHN": {
+    "in_degree": 9756,
+    "out_degree": 9733,
+    "kyc_ratio": 0.17375
+  },
+  "18xHTRqn7RDoYF58NXQNZtLDTBscc9o8Ge": {
+    "in_degree": 36079,
+    "out_degree": 36068,
+    "kyc_ratio": 0.20936666666666667
+  },
+  "1N6cnjX48nosuDuxCr7Hw899Ms2XmvdvDZ": {
+    "in_degree": 14985,
+    "out_degree": 14992,
+    "kyc_ratio": 0.2097
+  },
+  "3LQ82KkQXD6fnAd65jKipomtZ7oNUrqM9k": {
+    "in_degree": 7732,
+    "out_degree": 7722,
+    "kyc_ratio": 0.5051494850514948
+  },
+  "17vJw51y5AzcuQALS5Ai4gytTNxVq84cwU": {
+    "in_degree": 10283,
+    "out_degree": 10168,
+    "kyc_ratio": 0.24046666666666666
+  },
+  "15QTSMLdcdy683HV7KpgD52jxT3P84kJMS": {
+    "in_degree": 6330,
+    "out_degree": 6361,
+    "kyc_ratio": 0.21869515069454892
+  },
+  "345hWybWUvo2ULBWFcDp7uRWt1Se7r9PtZ": {
+    "in_degree": 8245,
+    "out_degree": 8198,
+    "kyc_ratio": 0.2588666666666667
+  },
+  "14DN5vC8rBq6hK1ummpot3Gpn5qLWLZkWt": {
+    "in_degree": 5056,
+    "out_degree": 5036,
+    "kyc_ratio": 0.2816551234239034
+  },
+  "1PGEZAw9NhUXsXEHCaMjscCmWZcLGiLyW8": {
+    "in_degree": 8248,
+    "out_degree": 8220,
+    "kyc_ratio": 0.26103333333333334
+  },
+  "1B1bAnifr86vGyt4WtGcUVqfYXtrqmHLXD": {
+    "in_degree": 9047,
+    "out_degree": 9029,
+    "kyc_ratio": 0.2539838310201411
+  },
+  "1P2g3cgZs4EtsKQqTW4mf7ErJs7skqURvt": {
+    "in_degree": 11063,
+    "out_degree": 11056,
+    "kyc_ratio": 0.24046666666666666
+  },
+  "3CConkEawuDQXyFgm3YtrTbinyKwCDCGJz": {
+    "in_degree": 5103,
+    "out_degree": 5343,
+    "kyc_ratio": 0.17765
+  },
+  "186gv57Gecdz9CB3E72wu6MKGHHt5PoMSx": {
+    "in_degree": 7170,
+    "out_degree": 7167,
+    "kyc_ratio": 0.23250012473182657
+  },
+  "17NnPCZQuKUGaYWQACkbtjRchD7wJnanQr": {
+    "in_degree": 6040,
+    "out_degree": 6089,
+    "kyc_ratio": 0.23455
+  },
+  "16DMvwC4d1TfHPfSpdpFkkajMbJN2ij6QB": {
+    "in_degree": 12777,
+    "out_degree": 12863,
+    "kyc_ratio": 0.28055
+  },
+  "1KbeAU2WQx5iGoDXk6QfBtUcj8cozqc6Rn": {
+    "in_degree": 5883,
+    "out_degree": 5823,
+    "kyc_ratio": 0.23096041185868987
+  },
+  "1Fis9oHXwyeTAbmkfASTcmREajzxHihHW5": {
+    "in_degree": 7621,
+    "out_degree": 7675,
+    "kyc_ratio": 0.26553333333333334
+  },
+  "1aXko4mXap9CsHPf5sB2KyJZ4ghyFyyqc": {
+    "in_degree": 8885,
+    "out_degree": 8869,
+    "kyc_ratio": 0.27576666666666666
+  },
+  "1M8Be2m5snrh8AaFFUEd4hTahyEFDjxchJ": {
+    "in_degree": 6955,
+    "out_degree": 7085,
+    "kyc_ratio": 0.2125331067912648
+  },
+  "12bMvUUQNhStsQ4JTaQ6mMcbE4qMspm7oL": {
+    "in_degree": 12378,
+    "out_degree": 12364,
+    "kyc_ratio": 0.1864
+  },
+  "13KCn8zmsXucT3DfyYVs2c7UT5wdU63jSL": {
+    "in_degree": 9984,
+    "out_degree": 9988,
+    "kyc_ratio": 0.27226666666666666
+  },
+  "1Me9PEuMT51Pts8DMM3VQorPD2PwYhnCoE": {
+    "in_degree": 12604,
+    "out_degree": 12575,
+    "kyc_ratio": 0.1853
+  },
+  "1EQJmtokzk9buUQGim3oKLRUvaMbQ5XMtn": {
+    "in_degree": 5023,
+    "out_degree": 5068,
+    "kyc_ratio": 0.24639684106614018
+  },
+  "1B86VJfLwf4DJxYdFGPVu8jYmy4nDqiofQ": {
+    "in_degree": 27191,
+    "out_degree": 27183,
+    "kyc_ratio": 0.27300414057420525
+  },
+  "1AKgYVZbcHBp7ozpg2dPyqstggQoeoGTuy": {
+    "in_degree": 6909,
+    "out_degree": 7358,
+    "kyc_ratio": 0.22845
+  },
+  "142LuLRxB48LuiuicK5SyZwEHzDn5sDgqz": {
+    "in_degree": 9536,
+    "out_degree": 9519,
+    "kyc_ratio": 0.2895
+  },
+  "192bbGNyCCS6NGbHrQhHFP8j9LVWQxyuA5": {
+    "in_degree": 6531,
+    "out_degree": 6513,
+    "kyc_ratio": 0.28363333333333335
+  },
+  "bc1q4wk72rt3h2cjum2hn6yju6tw7k6j238zt5xy4zed39q7df96ktpstl0q55": {
+    "in_degree": 7310,
+    "out_degree": 7304,
+    "kyc_ratio": 0.21335189444377195
+  },
+  "36XRdQsT7iX8UgmFpXSCHvHU98D7RdaCvL": {
+    "in_degree": 22786,
+    "out_degree": 15823,
+    "kyc_ratio": 0.19711595055915243
+  },
+  "16V27SRDCzKcBAgP1iocDfM9zEQz5JWF9B": {
+    "in_degree": 11185,
+    "out_degree": 11277,
+    "kyc_ratio": 0.2633
+  },
+  "32dEkytsJNRV3W268stfrAQtVhV7PZykts": {
+    "in_degree": 5148,
+    "out_degree": 5214,
+    "kyc_ratio": 0.3692
+  },
+  "13nEr7i8nX2jeuTWntS9Af7t127ykExcPT": {
+    "in_degree": 6340,
+    "out_degree": 6365,
+    "kyc_ratio": 0.293
+  },
+  "1NheV8eQfHuVHLd25ggoMy5dbUBLVUygGz": {
+    "in_degree": 8682,
+    "out_degree": 8693,
+    "kyc_ratio": 0.285
+  },
+  "38CuFFDAu8qqqUDVTkuCjpnPxb3kzHFBcs": {
+    "in_degree": 5036,
+    "out_degree": 5033,
+    "kyc_ratio": 0.1748619957537155
+  },
+  "336izuoyUcd39zcPjq6m4qkmSFuZUX1Yik": {
+    "in_degree": 14813,
+    "out_degree": 14812,
+    "kyc_ratio": 0.2846666666666667
+  },
+  "1Eq7soqFbGg1ZpPZTcZP1pPH4dQzXT4y99": {
+    "in_degree": 6287,
+    "out_degree": 6402,
+    "kyc_ratio": 0.28705
+  },
+  "12eHkY6DF5AvTDjtqAN2szvw3HRy9gTo4X": {
+    "in_degree": 7902,
+    "out_degree": 7919,
+    "kyc_ratio": 0.23763402108298046
+  },
+  "13jS8HSXTjozRYGTB16skQaZAkRx4YUvG7": {
+    "in_degree": 12491,
+    "out_degree": 12362,
+    "kyc_ratio": 0.296
+  },
+  "1HCfv5H2uN85NjsG3TAefhzSCaYYHxfPr2": {
+    "in_degree": 9428,
+    "out_degree": 9404,
+    "kyc_ratio": 0.2493
+  },
+  "1BPuSDFR6SybSmXXCFmvK38YVA1BnnqgkU": {
+    "in_degree": 8084,
+    "out_degree": 8109,
+    "kyc_ratio": 0.22223333333333334
+  },
+  "14Pq2f4emku7kgbVDCDQ6Hnu1Src4Fi3wW": {
+    "in_degree": 5052,
+    "out_degree": 5103,
+    "kyc_ratio": 0.25785
+  },
+  "3KzodMxtfpTGwWzRqBXXcwAXDBdZtnPjso": {
+    "in_degree": 14200,
+    "out_degree": 14003,
+    "kyc_ratio": 0.5241305718581752
+  }
+}
