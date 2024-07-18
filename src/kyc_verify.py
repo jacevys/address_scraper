@@ -1,9 +1,10 @@
 from dal_btc import Neo4jConnection
-import inference_ml as ml
+import inference_ml_btc as ml
 from concurrent.futures import ThreadPoolExecutor, as_completed
 import utils
 import time
 import math
+import asyncio
 
 # Connection details
 uri = "bolt://192.168.200.83:7687/"
@@ -31,7 +32,7 @@ def get_kyc_ratio(databases: list[str], address: str, json_file_path: str):
         # Define a function to process each neighbor
         def process_neighbor(neighbor):
             try:
-                return neighbor, ml.main(address=neighbor)
+                return neighbor, asyncio.run(ml.main(address=neighbor))
             except Exception as e:
                 print(f"Error processing neighbor: {neighbor}: {e}")
                 return neighbor, None
@@ -48,7 +49,7 @@ def get_kyc_ratio(databases: list[str], address: str, json_file_path: str):
                 except Exception as e:
                     print(f"Error processing future: {e}")
 
-        print('Finishe processing neighbors.')
+        print('Finish processing neighbors.')
         
         # Aggregate the results
         for neighbor, ml_result in results:
@@ -75,7 +76,7 @@ def main():
 
     visited_file_path = './visited_list.json'
     visited_list = {}
-    visited_list = utils.readJson(visited_file_path)
+    # visited_list = utils.readJson(visited_file_path)
     misttrack_pending_file_path = './misttrack_pending_list.json'
     misttrack_list = utils.readJson(misttrack_pending_file_path)
     avg_ratio_file_path = './kyc_ratio.txt'
