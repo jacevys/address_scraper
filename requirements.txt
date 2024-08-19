@@ -3,3 +3,4 @@ uvicorn
 numpy
 requests
 xgboost
+neo4j

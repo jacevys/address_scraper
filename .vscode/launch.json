@@ -3,9 +3,8 @@
     "configurations": [
       {
         "name": "Python: kyc_verify",
-        "type": "python",
+        "type": "debugpy",
         "request": "launch",
-        "mode": "debug",
         "program": "${workspaceFolder}/src/kyc_verify.py",
         "console": "integratedTerminal",
         "justMyCode": true

@@ -16,7 +16,7 @@ conn = Neo4jConnection(uri=uri, user=user, password=password)
 def get_kyc_ratio(databases: list[str], address: str, json_file_path: str):
     total, kyc = 0, 0
     for db in databases:
-        neighbors = conn.get_neighbors(db_name=db, address=address, limit=10 ** 4)
+        neighbors = conn.get_neighbors(db_name=db, address=address, limit=10 ** 3)
         print(f"Address: {address}, Database: {db}, Number of neighbors: {len(neighbors)}")
         total += len(neighbors)
 
@@ -55,7 +55,7 @@ def main():
     btc_list = utils.readJson('./label_database/btc.json')
     visited_file_path = './visited_list.json'
     visited_list = {}
-    # visited_list = utils.readJson(visited_file_path)
+    visited_list = utils.readJson(visited_file_path)
     databases = ['bitcoin', 'bitcoin2', 'bitcoin5']
 
     if len(visited_list) > 10 ** 8:

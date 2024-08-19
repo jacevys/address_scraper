@@ -15,7 +15,7 @@ def main():
 
     visited_file_path = './visited_list.json'
     visited_list = {}
-    # visited_list = utils.readJson(visited_file_path)
+    visited_list = utils.readJson(visited_file_path)
     misttrack_pending_file_path = './misttrack_pending_list.json'
 
     if len(visited_list) > 10 ** 8:
