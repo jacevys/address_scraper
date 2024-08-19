@@ -113,3 +113,16 @@ Jace, Allen
            record.direction AS direction, r2.value AS value
     ''' % (address, address)
     ```
+
+# Stage of scraping
+1. Compute kyc ratio
+  - Run kyc_ratio.py, which will write the kyc ratio into kyc_ratio.txt
+
+2. Generate exchange list
+  - Run gen_exch_list.py, which will generate the potential address of exchange with higher degree than 10000
+
+3. Verify kyc ratio
+  - Run kyc_verify.py to filter out the address with higher kyc ratio determined in the first step
+
+4. Get misttrack label
+  - Run get_misttrack_label.py to acquire the misttrack label for address filtered out by the third step
